@@ -1,0 +1,16 @@
+[
+  {
+    "id": "subj_math",
+    "title": "Matematika (Milliy sertifikat)",
+    "description": "Arifmetika, algebra, geometriya, matematik analiz va ehtimollar nazariyasi",
+    "iconName": "calculate",
+    "orderIndex": 1
+  },
+  {
+    "id": "subj_dxx",
+    "title": "DXX Akademiyasi yo'nalishi",
+    "description": "Harbiy-mantiqiy fikrlash, saralash talablari va maxsus tayyorgarlik",
+    "iconName": "shield",
+    "orderIndex": 2
+  }
+]

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ziyo Akademiya</string>
+    <string name="nav_home">Bosh sahifa</string>
+    <string name="nav_subjects">Fanlar</string>
+    <string name="nav_tests">Testlar</string>
+    <string name="nav_ai_tutor">AI repetitor</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Disclaimers -->
+    <string name="dxx_disclaimer">Diqqat: Ushbu ilova davlat organi yoki DXX tomonidan rasman tasdiqlanmagan va ularga aloqador emas. Kirish talablari faqat ochiq axborot manbalariga asoslangan bo‘lib, rasmiy tasdiq talab etiladi. Sertifikat qabulni kafolatlamaydi.</string>
+    <string name="original_question_label">Mualliflik asosidagi mashq savoli</string>
+
+    <!-- Home -->
+    <string name="home_exam_countdown_title">Imtihongacha qolgan vaqt</string>
+    <string name="home_days">kun</string>
+    <string name="home_today_plan">Bugungi o‘quv rejasi</string>
+    <string name="home_continue_learning">Darsni davom ettirish</string>
+    <string name="home_streak">Kunlik seriya</string>
+    <string name="home_minutes">daqiqa</string>
+    <string name="home_questions_solved">Yechilgan savollar</string>
+    <string name="home_mastery">Mavzular o‘zlashtirilishi</string>
+    <string name="home_weak_topics">Qaytarish tavsiya etilgan mavzular</string>
+    <string name="home_quick_mock">Namunaviy imtihonni boshlash</string>
+
+    <!-- General -->
+    <string name="action_start">Boshlash</string>
+    <string name="action_submit">Yakunlash</string>
+    <string name="action_next">Keyingisi</string>
+    <string name="action_previous">Oldingisi</string>
+    <string name="action_retry">Qayta yechish</string>
+    <string name="action_hint">Maslahat (shpora)</string>
+    <string name="action_solution">To‘liq yechim</string>
+    <string name="action_save">Saqlash</string>
+    <string name="action_cancel">Bekor qilish</string>
+</resources>

@@ -1,0 +1,2196 @@
+[
+  {
+    "id": "lesson_arithmetic",
+    "topicId": "topic_arithmetic",
+    "title": "Sonlar va arifmetika: Bo'linish, EKUB, EKUK va kasrlar",
+    "definition": "Natural, butun va ratsional sonlar ustida arifmetik amallar, tub ko'paytuvchilarga ajratish, eng katta umumiy bo'luvchi (EKUB) hamda eng kichik umumiy karrali (EKUK) tushunchalari sonlar nazariyasining poydevori hisoblanadi.",
+    "prerequisites": [
+      "Natural sonlar",
+      "Ko'paytirish jadvali",
+      "Oddiy kasrlar"
+    ],
+    "formulas": [
+      {
+        "title": "EKUB va EKUK bog'lanishi",
+        "formula": "EKUB(a, b) * EKUK(a, b) = a * b",
+        "explanation": "Ixtiyoriy ikkita natural son uchun ularning EKUBi va EKUKi ko'paytmasi sonlarning o'zaro ko'paytmasiga teng."
+      },
+      {
+        "title": "Kasrlarni qo'shish va ayirish",
+        "formula": "a/b ± c/d = (a*d ± b*c) / (b*d)",
+        "explanation": "Turli maxrajli kasrlar umumiy maxrajga (EKUK) keltirilib hisoblanadi."
+      },
+      {
+        "title": "Foiz formulasi",
+        "formula": "P = (a * p) / 100",
+        "explanation": "a sonining p foizini topish formulasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_arith_1",
+        "difficulty": "Oson",
+        "problemText": "36 va 48 sonlarining EKUB va EKUKini toping.",
+        "solutionSteps": [
+          "1. 36 sonini tub ko'paytuvchilarga ajratamiz: 36 = 2^2 * 3^2.",
+          "2. 48 sonini tub ko'paytuvchilarga ajratamiz: 48 = 2^4 * 3^1.",
+          "3. EKUB uchun umumiy tub asoslarning eng kichik darajalarini olamiz: 2^2 * 3^1 = 4 * 3 = 12.",
+          "4. EKUK uchun barcha tub asoslarning eng katta darajalarini olamiz: 2^4 * 3^2 = 16 * 9 = 144."
+        ],
+        "finalAnswer": "EKUB = 12, EKUK = 144"
+      },
+      {
+        "id": "ex_arith_2",
+        "difficulty": "O'rta",
+        "problemText": "Hisoblang: (3/4 + 2/5) : 23/20",
+        "solutionSteps": [
+          "1. Qavs ichidagi yig'indini hisoblaymiz: 3/4 + 2/5 = (15 + 8) / 20 = 23/20.",
+          "2. Bo'lish amalini ko'paytirishga aylantiramiz: 23/20 : 23/20 = (23/20) * (20/23) = 1."
+        ],
+        "finalAnswer": "1"
+      },
+      {
+        "id": "ex_arith_3",
+        "difficulty": "Murakkab",
+        "problemText": "Tovarning narxi avval 20% ga oshirildi, so'ngra yangi narx 20% ga pasaytirildi. Dastlabki narx necha foizga o'zgargan?",
+        "solutionSteps": [
+          "1. Dastlabki narxni x deb belgilaymiz (yoki 100 birlik).",
+          "2. 20% oshirilgandan keyingi narx: x * 1.20 = 1.20x.",
+          "3. Yangi narx 20% pasaytirilganda: 1.20x * (1 - 0.20) = 1.20x * 0.80 = 0.96x.",
+          "4. O'zgarish: x - 0.96x = 0.04x, ya'ni tovar narxi dastlabkiga nisbatan 4% ga kamaygan."
+        ],
+        "finalAnswer": "4% ga kamaygan"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Ketma-ket foiz o'zgarishini oddiy qo'shish",
+        "wrongApproach": "20% oshib, 20% kamaysa, narx o'zgarmaydi (20 - 20 = 0%).",
+        "correctApproach": "Har bir keyingi foiz yangi hosil bo'lgan oraliq qiymatdan hisoblanishi shart: 1.2 * 0.8 = 0.96 (4% kamayish).",
+        "reason": "Ikkinchi foiz kattaroq bazaga nisbatan olinadi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_arith_1",
+        "questionText": "240 sonining 35% ini hisoblang.",
+        "hint": "240 ni 0.35 ga ko'paytiring yoki (240 * 35) / 100 amalini bajaring.",
+        "answer": "84",
+        "explanation": "240 * 35 / 100 = 24 * 3.5 = 84."
+      }
+    ],
+    "revisionRecommendation": "Murakkab kasrlar, proporsiyalar va foizli masalalarni yechishda tejamkor qisqartirish usullarini qo'llang."
+  },
+  {
+    "id": "lesson_powers_roots",
+    "topicId": "topic_powers_roots",
+    "title": "Darajalar, ildizlar va arifmetik amallar",
+    "definition": "Haqiqiy sonning natural, butun va ratsional darajasi tushunchasi hamda n-darajali arifmetik ildiz xossalari ko'p sonli ifodalarni ixchamlashtirish va tenglamalarni yechish vositasidir.",
+    "prerequisites": [
+      "Ko'paytirish amali",
+      "Kasrlar",
+      "Manfiy sonlar"
+    ],
+    "formulas": [
+      {
+        "title": "Darajalarni ko'paytirish va bo'lish",
+        "formula": "a^m * a^n = a^(m+n); a^m / a^n = a^(m-n)",
+        "explanation": "Asoslari bir xil darajalar ko'paytirilganda daraja ko'rsatkichlari qo'shiladi, bo'linganda ayriladi."
+      },
+      {
+        "title": "Ratsional daraja",
+        "formula": "a^(m/n) = n-ildiz ostida(a^m)",
+        "explanation": "a > 0, n natural son (n >= 2), m butun son bo'lganda o'rinli."
+      },
+      {
+        "title": "Ildizlar ko'paytmasi",
+        "formula": "sqrt(a * b) = sqrt(a) * sqrt(b)",
+        "explanation": "a >= 0 va b >= 0 shartlarda o'rinli."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_pow_1",
+        "difficulty": "Oson",
+        "problemText": "Hisoblang: 2^5 * 2^(-2) : 2^2",
+        "solutionSteps": [
+          "1. Ko'paytirishda darajalarni qo'shamiz: 2^(5 + (-2)) = 2^3.",
+          "2. Bo'lishda darajani ayiramiz: 2^(3 - 2) = 2^1 = 2."
+        ],
+        "finalAnswer": "2"
+      },
+      {
+        "id": "ex_pow_2",
+        "difficulty": "O'rta",
+        "problemText": "Ifodani soddalashtiring: sqrt(75) - sqrt(27) + sqrt(12)",
+        "solutionSteps": [
+          "1. Har bir ildiz ostidagi sonni to'la kvadrat ko'paytuvchiga ajratamiz: sqrt(25 * 3) - sqrt(9 * 3) + sqrt(4 * 3).",
+          "2. Ildizdan chiqaramiz: 5*sqrt(3) - 3*sqrt(3) + 2*sqrt(3).",
+          "3. O'xshash hadlarni birlashtiramiz: (5 - 3 + 2)*sqrt(3) = 4*sqrt(3)."
+        ],
+        "finalAnswer": "4*sqrt(3)"
+      },
+      {
+        "id": "ex_pow_3",
+        "difficulty": "Murakkab",
+        "problemText": "Maxrajni irratsionallikdan qutqaring: 6 / (sqrt(5) - sqrt(2))",
+        "solutionSteps": [
+          "1. Kasrning surat va maxrajini qo'shmasi bo'lgan (sqrt(5) + sqrt(2)) ga ko'paytiramiz.",
+          "2. Maxraj: (sqrt(5) - sqrt(2))*(sqrt(5) + sqrt(2)) = (sqrt(5))^2 - (sqrt(2))^2 = 5 - 2 = 3.",
+          "3. Surat: 6 * (sqrt(5) + sqrt(2)).",
+          "4. Kasrni 3 ga qisqartiramiz: 2 * (sqrt(5) + sqrt(2)) = 2*sqrt(5) + 2*sqrt(2)."
+        ],
+        "finalAnswer": "2*sqrt(5) + 2*sqrt(2)"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Ildiz ostidagi yig'indini alohida ajratish",
+        "wrongApproach": "sqrt(a^2 + b^2) = a + b deb yozish.",
+        "correctApproach": "sqrt(a^2 + b^2) faqat ildiz ostida hisoblanadi, yig'indini to'g'ridan-to'g'ri ildizdan chiqarib bo'lmaydi. Masalan: sqrt(3^2 + 4^2) = sqrt(25) = 5, lekin 3 + 4 = 7.",
+        "reason": "Ildiz amali qo'shishga nisbatan distributiv emas."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_pow_1",
+        "questionText": "Hisoblang: 27^(2/3)",
+        "hint": "27 sonini 3^3 deb yozing va darajani darajaga ko'tarish qoidasidan foydalaning.",
+        "answer": "9",
+        "explanation": "(3^3)^(2/3) = 3^(3 * 2/3) = 3^2 = 9."
+      }
+    ],
+    "revisionRecommendation": "Ratsional darajali ifodalar bilan amallarni va kvadrat ildizdan ozod qilish usullarini mustahkamlang."
+  },
+  {
+    "id": "lesson_polynomials",
+    "topicId": "topic_polynomials",
+    "title": "Algebraik ifodalar va qisqa ko'paytirish formulalari",
+    "definition": "Qisqa ko'paytirish formulalari ko'phadlarni ko'paytuvchilarga ajratish va algebraik ifodalarni soddalashtirishning eng kuchli analitik apparatidir.",
+    "prerequisites": [
+      "Birhadlar va ko'phadlar",
+      "Qavslarni ochish"
+    ],
+    "formulas": [
+      {
+        "title": "Yig'indi va ayirmaning kvadrati",
+        "formula": "(a ± b)^2 = a^2 ± 2ab + b^2",
+        "explanation": "Ikkita son yig'indisining kvadrati ularning kvadratlari va ikkilangan ko'paytmasi yig'indisiga teng."
+      },
+      {
+        "title": "Kvadratlar ayirmasi",
+        "formula": "a^2 - b^2 = (a - b)(a + b)",
+        "explanation": "Kvadratlar ayirmasi ularning ayirmasi va yig'indisining ko'paytmasiga teng."
+      },
+      {
+        "title": "Kublar yig'indisi va ayirmasi",
+        "formula": "a^3 ± b^3 = (a ± b)(a^2 ∓ ab + b^2)",
+        "explanation": "To'liqsiz kvadrat ishtirok etadigan ko'paytuvchilarga ajratish ayniyati."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_poly_1",
+        "difficulty": "Oson",
+        "problemText": "Ifodani soddalashtiring: (2x + 3)^2 - 12x",
+        "solutionSteps": [
+          "1. Qavsni qisqa ko'paytirish formulasi bo'yicha ochamiz: (2x)^2 + 2*(2x)*3 + 3^2 = 4x^2 + 12x + 9.",
+          "2. 12x ni ayiramiz: 4x^2 + 12x + 9 - 12x = 4x^2 + 9."
+        ],
+        "finalAnswer": "4x^2 + 9"
+      },
+      {
+        "id": "ex_poly_2",
+        "difficulty": "O'rta",
+        "problemText": "Kasrni qisqartiring: (x^2 - 9) / (2x^2 + 6x)",
+        "solutionSteps": [
+          "1. Suratni kvadratlar ayirmasiga ajratamiz: x^2 - 9 = (x - 3)(x + 3).",
+          "2. Maxrajdan 2x umumiy ko'paytuvchini chiqaramiz: 2x(x + 3).",
+          "3. Umumiy (x + 3) ko'paytuvchini qisqartiramiz: (x - 3) / (2x)."
+        ],
+        "finalAnswer": "(x - 3) / (2x)"
+      },
+      {
+        "id": "ex_poly_3",
+        "difficulty": "Murakkab",
+        "problemText": "Agar x + 1/x = 4 bo'lsa, x^2 + 1/x^2 ning qiymatini toping.",
+        "solutionSteps": [
+          "1. Tenglikning ikkala qismini kvadratga ko'taramiz: (x + 1/x)^2 = 4^2.",
+          "2. Chap tomonni ochamiz: x^2 + 2 * x * (1/x) + 1/x^2 = 16.",
+          "3. x * (1/x) = 1 bo'lgani sababli: x^2 + 2 + 1/x^2 = 16.",
+          "4. 2 ni o'ng tomonga o'tkazamiz: x^2 + 1/x^2 = 16 - 2 = 14."
+        ],
+        "finalAnswer": "14"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Ikkilangan ko'paytmani unutib qoldirish",
+        "wrongApproach": "(a + b)^2 = a^2 + b^2 deb hisoblash.",
+        "correctApproach": "(a + b)^2 = a^2 + 2ab + b^2. Har doim 2ab had mavjudligini nazorat qiling.",
+        "reason": "(a + b)(a + b) da o'rta hadlar a*b + b*a = 2ab ni beradi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_poly_1",
+        "questionText": "Ko'paytuvchilarga ajrating: x^2 - 16",
+        "hint": "Kvadratlar ayirmasi formulasi a^2 - b^2 = (a - b)(a + b) dan foydalaning.",
+        "answer": "(x - 4)(x + 4)",
+        "explanation": "16 = 4^2 bo'lgani sababli (x - 4)(x + 4) bo'ladi."
+      }
+    ],
+    "revisionRecommendation": "Ko'phadlarni guruhlash usuli bilan ko'paytuvchilarga ajratishni takrorlang."
+  },
+  {
+    "id": "lesson_linear_quadratic",
+    "topicId": "topic_linear_quadratic",
+    "title": "Chiziqli va kvadrat tenglamalar: Diskriminant va Viyet",
+    "definition": "Bir noma'lumli tenglamalarni yechish va kvadrat uchhadning ildizlarini diskriminant hamda Viyet teoremalari orqali tahlil qilish matematik modellashtirishning asosi hisoblanadi.",
+    "prerequisites": [
+      "Chiziqli tenglamalar",
+      "Algebraik shakllantirish"
+    ],
+    "formulas": [
+      {
+        "title": "Kvadrat tenglama diskriminanti",
+        "formula": "D = b^2 - 4ac",
+        "explanation": "D > 0 bo'lsa 2 ta turli haqiqiy ildiz, D = 0 bo'lsa 1 ta (karrali) ildiz, D < 0 bo'lsa haqiqiy ildiz yo'q."
+      },
+      {
+        "title": "Ildizlar formulasi",
+        "formula": "x_(1,2) = (-b ± sqrt(D)) / (2a)",
+        "explanation": "Kvadrat tenglamaning umumiy ko'rinishdagi ildizlarini topish."
+      },
+      {
+        "title": "Viyet teoremalari",
+        "formula": "x_1 + x_2 = -b/a; x_1 * x_2 = c/a",
+        "explanation": "Keltirilgan kvadrat tenglamada (a=1) ildizlar yig'indisi qarama-qarshi ishora bilan olingan ikkinchi koeffitsientga, ko'paytmasi ozod hadga teng."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_quad_1",
+        "difficulty": "Oson",
+        "problemText": "Tenglamani yeching: 2x - 7 = 3x + 1",
+        "solutionSteps": [
+          "1. Noma'lumlarni bir tomonga, ma'lumlarni ikkinchi tomonga o'tkazamiz: 2x - 3x = 1 + 7.",
+          "2. -x = 8 => x = -8."
+        ],
+        "finalAnswer": "-8"
+      },
+      {
+        "id": "ex_quad_2",
+        "difficulty": "O'rta",
+        "problemText": "Tenglamaning ildizlarini toping: x^2 - 7x + 12 = 0",
+        "solutionSteps": [
+          "1. Viyet teoremasiga ko'ra: x_1 + x_2 = 7 va x_1 * x_2 = 12.",
+          "2. Ko'paytmasi 12 va yig'indisi 7 bo'lgan sonlar: 3 va 4.",
+          "3. Tekshiramiz: 3^2 - 7*3 + 12 = 9 - 21 + 12 = 0."
+        ],
+        "finalAnswer": "3 va 4"
+      },
+      {
+        "id": "ex_quad_3",
+        "difficulty": "Murakkab",
+        "problemText": "2x^2 - 5x + 1 = 0 tenglamaning ildizlari x_1 va x_2 bo'lsa, x_1^2 + x_2^2 ifodaning qiymatini toping.",
+        "solutionSteps": [
+          "1. Viyet teoremasidan: x_1 + x_2 = 5/2 = 2.5 va x_1 * x_2 = 1/2 = 0.5.",
+          "2. x_1^2 + x_2^2 = (x_1 + x_2)^2 - 2*x_1*x_2 formuladan foydalanamiz.",
+          "3. Qiymatlarni qo'yamiz: (5/2)^2 - 2*(1/2) = 25/4 - 1 = 21/4 = 5.25."
+        ],
+        "finalAnswer": "5.25 (yoki 21/4)"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Viyet teoremasida ishorani adashtirish",
+        "wrongApproach": "x^2 - 5x + 6 = 0 da ildizlar yig'indisini -5 deb olish.",
+        "correctApproach": "x_1 + x_2 = -(-5) = +5. Ishora har doim qarama-qarshisiga o'zgaradi.",
+        "reason": "Keltirilgan tenglama ko'rinishi: x^2 + px + q = 0 da x_1 + x_2 = -p."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_quad_1",
+        "questionText": "x^2 - 9x + 20 = 0 tenglamaning katta ildizini toping.",
+        "hint": "Ko'paytmasi 20 va yig'indisi 9 bo'lgan sonlarni aniqlang.",
+        "answer": "5",
+        "explanation": "Ildizlar 4 va 5. Ularning kattasi 5 ga teng."
+      }
+    ],
+    "revisionRecommendation": "Parametrli kvadrat tenglamalarda ildizlar sonini aniqlashni mashq qiling."
+  },
+  {
+    "id": "lesson_rational_radical",
+    "topicId": "topic_rational_radical",
+    "title": "Tengsizliklar va oraliqlar metodi",
+    "definition": "Ratsional va irratsional tengsizliklarni yechishda ifodaning nollarini topish, oraliqlarga ajratish hamda aniqlanish sohasini qat'iy inobatga olish zarur.",
+    "prerequisites": [
+      "Kvadrat tenglamalar",
+      "Sonlar o'qi",
+      "Interval tushunchasi"
+    ],
+    "formulas": [
+      {
+        "title": "Oraliqlar metodi qoidasi",
+        "formula": "(x - x_1)(x - x_2)...(x - x_n) > 0",
+        "explanation": "Ildizlar son o'qiga qo'yilib, o'ng tomondan musbat ishora bilan oraliqlar belgilanadi (toq darajali ildizlarda ishora almashadi, juft darajada almashmaydi)."
+      },
+      {
+        "title": "Irratsional tenglama sharti",
+        "formula": "sqrt(f(x)) = g(x) <=> f(x) = g^2(x) va g(x) >= 0",
+        "explanation": "Kvadrat ildiz natijasi manfiy bo'la olmasligi sababli o'ng tomon nomanfiy bo'lishi shart."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_rad_1",
+        "difficulty": "Oson",
+        "problemText": "Tengsizlikni yeching: (x - 2)(x - 5) < 0",
+        "solutionSteps": [
+          "1. Nollarni aniqlaymiz: x = 2 va x = 5.",
+          "2. Son o'qida oraliqlarni tekshiramiz: (-inf; 2) da +, (2; 5) da -, (5; +inf) da +.",
+          "3. Manfiy oraliq: x in (2; 5)."
+        ],
+        "finalAnswer": "(2; 5)"
+      },
+      {
+        "id": "ex_rad_2",
+        "difficulty": "O'rta",
+        "problemText": "Kasr-ratsional tengsizlikni yeching: (x - 3) / (x + 1) >= 0",
+        "solutionSteps": [
+          "1. Suratning noli: x = 3 (nolga teng bo'lishi mumkin).",
+          "2. Maxrajning noli: x = -1 (maxraj 0 bo'la olmaydi, qat'iy chetlatiladi: x != -1).",
+          "3. Oraliqlar: (-inf; -1) da +, (-1; 3] da -, [3; +inf) da +.",
+          "4. Javob: (-inf; -1) U [3; +inf)."
+        ],
+        "finalAnswer": "(-inf; -1) U [3; +inf)"
+      },
+      {
+        "id": "ex_rad_3",
+        "difficulty": "Murakkab",
+        "problemText": "Tenglamani yeching: sqrt(x + 5) = x - 1",
+        "solutionSteps": [
+          "1. Majburiy shart: x - 1 >= 0 => x >= 1.",
+          "2. Ikkala tomonni kvadratga ko'taramiz: x + 5 = (x - 1)^2.",
+          "3. x + 5 = x^2 - 2x + 1 => x^2 - 3x - 4 = 0.",
+          "4. Ildizlar: x_1 = 4, x_2 = -1.",
+          "5. Shartni tekshiramiz: x >= 1 bo'lgani uchun x = 4 qanoatlantiradi, x = -1 esa chet ildiz (chunki sqrt(-1 + 5) = 2 != -2)."
+        ],
+        "finalAnswer": "4"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Maxrajdagi o'zgaruvchili ifodaga tengsizlikni to'g'ridan-to'g'ri ko'paytirib yuborish",
+        "wrongApproach": "1/x > 1 tengsizlikni x ga ko'paytirib 1 > x deb yozish.",
+        "correctApproach": "x ning ishorasi noma'lum bo'lgani uchun barcha hadlar chap tomonga o'tkaziladi: 1/x - 1 > 0 => (1 - x)/x > 0.",
+        "reason": "Manfiy songa ko'paytirilganda tengsizlik ishorasi teskarisiga o'zgarishi kerak, x esa manfiy bo'lishi ham mumkin."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_rad_1",
+        "questionText": "sqrt(2x + 6) = 4 tenglamani yeching.",
+        "hint": "Ikkala tomonni kvadratga ko'taring va x ni toping.",
+        "answer": "5",
+        "explanation": "2x + 6 = 16 => 2x = 10 => x = 5. Tekshirish: sqrt(10 + 6) = 4 to'g'ri."
+      }
+    ],
+    "revisionRecommendation": "Irratsional tenglamalarda chet ildizlarni ajratishni doimo yodda tuting."
+  },
+  {
+    "id": "lesson_systems",
+    "topicId": "topic_systems",
+    "title": "Tenglamalar va tengsizliklar sistemalari",
+    "definition": "Bir necha noma'lumli tenglamalar sistemasi barcha tenglamalarni bir vaqtda qanoatlantiruvchi qiymatlar to'plamini topishni talab qiladi.",
+    "prerequisites": [
+      "Chiziqli tenglamalar",
+      "Algebraik qo'shish usuli"
+    ],
+    "formulas": [
+      {
+        "title": "O'rniga qo'yish usuli",
+        "formula": "y = f(x) => g(x, f(x)) = 0",
+        "explanation": "Bitta tenglamadan bitta noma'lum topilib, ikkinchisiga keltirib qo'yiladi."
+      },
+      {
+        "title": "Algebraik qo'shish usuli",
+        "formula": "k_1 * Eq_1 + k_2 * Eq_2",
+        "explanation": "Koeffitsientlarni tenglashtirib, tenglamalarni qo'shish orqali bitta noma'lum yo'qotiladi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_sys_1",
+        "difficulty": "Oson",
+        "problemText": "Sistemani yeching: { 2x + y = 8; x - y = 1 }",
+        "solutionSteps": [
+          "1. Ikkala tenglamani hadma-had qo'shamiz: (2x + x) + (y - y) = 8 + 1 => 3x = 9 => x = 3.",
+          "2. x ning qiymatini ikkinchi tenglamaga qo'yamiz: 3 - y = 1 => y = 2."
+        ],
+        "finalAnswer": "x = 3, y = 2"
+      },
+      {
+        "id": "ex_sys_2",
+        "difficulty": "O'rta",
+        "problemText": "Sistemani yeching: { x + y = 5; x * y = 6 }",
+        "solutionSteps": [
+          "1. Viyet teoremasiga ko'ra, x va y sonlari t^2 - 5t + 6 = 0 kvadrat tenglamaning ildizlaridir.",
+          "2. Ildizlar: t_1 = 2, t_2 = 3.",
+          "3. Demak, yechimlar juftligi: (2; 3) va (3; 2)."
+        ],
+        "finalAnswer": "(2; 3) va (3; 2)"
+      },
+      {
+        "id": "ex_sys_3",
+        "difficulty": "Murakkab",
+        "problemText": "Sistemani yeching: { x^2 - y^2 = 24; x - y = 4 }",
+        "solutionSteps": [
+          "1. Birinchi tenglamani kvadratlar ayirmasiga ajratamiz: (x - y)(x + y) = 24.",
+          "2. x - y = 4 ekanini hisobga olsak: 4 * (x + y) = 24 => x + y = 6.",
+          "3. Hosil bo'lgan chiziqli sistemani yechamiz: { x - y = 4; x + y = 6 }.",
+          "4. Qo'shsak: 2x = 10 => x = 5. Ayrilsak: 2y = 2 => y = 1."
+        ],
+        "finalAnswer": "x = 5, y = 1"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Yechimlar juftligini chalg'itish",
+        "wrongApproach": "x uchun bir nechta, y uchun bir nechta qiymat chiqsa, ularni ixtiyoriy birlashtirish.",
+        "correctApproach": "Har bir x_i ga mos y_i qat'iy o'zaro bog'liq holda juftlik (x_i; y_i) ko'rinishida yoziladi.",
+        "reason": "Barcha tenglamalar bir vaqtda bajarilishi shart."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_sys_1",
+        "questionText": "Sistemani yeching: { x + y = 10; x - y = 4 }. x ning qiymatini toping.",
+        "hint": "Ikkala tenglamani qo'shib, 2x ni hisoblang.",
+        "answer": "7",
+        "explanation": "2x = 14 => x = 7."
+      }
+    ],
+    "revisionRecommendation": "Ikkinchi darajali tenglamalar sistemalarini Viyet teoremalari orqali tez yechishni mashq qiling."
+  },
+  {
+    "id": "lesson_functions",
+    "topicId": "topic_functions",
+    "title": "Funksiyalar, aniqlanish va qiymatlar sohasi",
+    "definition": "X to'plamning har bir x elementiga Y to'plamning yagona y elementi mos qo'yilgan qoida funksiya deyiladi: y = f(x). x — erkli o'zgaruvchi (argument), y — erksiz o'zgaruvchi (funksiya qiymati).",
+    "prerequisites": [
+      "Haqiqiy sonlar to'plami va oraliqlar",
+      "Tenglamalar va tengsizliklarni yechish",
+      "Dekart koordinatalar sistemasi"
+    ],
+    "formulas": [
+      {
+        "title": "Kvadrat ildiz aniqlanish sohasi",
+        "formula": "y = sqrt(g(x)) => g(x) >= 0",
+        "explanation": "Juft darajali ildiz ostidagi ifoda nomanfiy bo'lishi shart."
+      },
+      {
+        "title": "Kasr maxraji cheklovi",
+        "formula": "y = P(x) / Q(x) => Q(x) != 0",
+        "explanation": "Nolga bo'lish mumkin emas."
+      },
+      {
+        "title": "Chiziqli funksiya grafigi",
+        "formula": "y = kx + b",
+        "explanation": "To'g'ri chiziq, k — burchak koeffitsiyenti."
+      },
+      {
+        "title": "Parabola uchi koordinatalari",
+        "formula": "x_0 = -b / (2a), y_0 = f(x_0)",
+        "explanation": "y = ax^2 + bx + c kvadrat funksiya ekstremum nuqtasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_func_1",
+        "difficulty": "Oson",
+        "problemText": "f(x) = x^2 - 3x + 2 funksiya berilgan. f(2) qiymatini hisoblang.",
+        "solutionSteps": [
+          "Funksiya ifodasidagi har bir x o'rniga 2 sonini qo'yamiz.",
+          "f(2) = 2^2 - 3*(2) + 2.",
+          "Amallarni bajaramiz: 4 - 6 + 2 = 0."
+        ],
+        "finalAnswer": "0"
+      },
+      {
+        "id": "ex_func_2",
+        "difficulty": "O'rta",
+        "problemText": "f(x) = sqrt(2x - 6) funksiyaning aniqlanish sohasini (D(f)) toping.",
+        "solutionSteps": [
+          "1-qadam: Kvadrat ildiz ostidagi ifoda nomanfiy (>= 0) bo'lishi shart.",
+          "2-qadam: Tengsizlik tuzamiz: 2x - 6 >= 0.",
+          "3-qadam: 6 ni o'ng tomonga o'tkazamiz: 2x >= 6.",
+          "4-qadam: Har ikki tomonni 2 ga bo'lamiz: x >= 3.",
+          "5-qadam: Oraliq ko'rinishida yozamiz: [3; +cheksizlik)."
+        ],
+        "finalAnswer": "x >= 3 yoki [3; +cheksizlik)"
+      },
+      {
+        "id": "ex_func_3",
+        "difficulty": "Murakkab",
+        "problemText": "f(x) = 2x + 1 va g(x) = x^2 bo'lsa, murakkab funksiya g(f(2)) qiymatini toping.",
+        "solutionSteps": [
+          "1-qadam: Avval ichki f(2) funksiya qiymatini hisoblaymiz: f(2) = 2*(2) + 1 = 4 + 1 = 5.",
+          "2-qadam: Endi topilgan natijani tashqi g funksiyaga argument qilib beramiz: g(5).",
+          "3-qadam: g(5) = 5^2 = 25."
+        ],
+        "finalAnswer": "25"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Ildiz ostini qat'iy musbat deb xato olish",
+        "wrongApproach": "sqrt(2x - 6) da 2x - 6 > 0 deb x > 3 deb yozish (3 nuqtani kiritmaslik).",
+        "correctApproach": "Kvadrat ildiz ostidagi ifoda 0 ga ham teng bo'lishi mumkin: 2x - 6 >= 0, shuning uchun x >= 3.",
+        "reason": "sqrt(0) = 0 mavjud haqiqiy son. Faqat agar ildiz maxrajda bo'lsa, qat'iy > 0 bo'ladi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_func_1",
+        "questionText": "f(x) = 5 / (x - 4) funksiyaning aniqlanish sohasini toping.",
+        "hint": "Kasrning maxraji nolga teng bo'la olmaydi.",
+        "answer": "x != 4",
+        "explanation": "x - 4 != 0 => x != 4. Ya'ni (-cheksizlik; 4) U (4; +cheksizlik)."
+      }
+    ],
+    "revisionRecommendation": "Funksiyalarning aniqlanish sohasida uch asosiy cheklovni tekshiring: maxraj != 0, juft ildiz >= 0, logarifm argumenti > 0."
+  },
+  {
+    "id": "lesson_exponential",
+    "topicId": "topic_exponential",
+    "title": "Ko'rsatkichli funksiya, tenglama va tengsizliklar",
+    "definition": "y = a^x (a > 0, a != 1) ko'rinishidagi funksiya ko'rsatkichli funksiya deyiladi. Uning qiymatlar sohasi doimo musbat sonlar to'plamidir.",
+    "prerequisites": [
+      "Darajalar xossalari",
+      "Tenglamalar"
+    ],
+    "formulas": [
+      {
+        "title": "Asosiy xossa",
+        "formula": "a^f(x) = a^g(x) <=> f(x) = g(x) (a > 0, a != 1)",
+        "explanation": "Asoslar bir xil bo'lsa, daraja ko'rsatkichlari tenglashtiriladi."
+      },
+      {
+        "title": "Ko'rsatkichli tengsizlik",
+        "formula": "a > 1 bo'lsa a^f(x) > a^g(x) <=> f(x) > g(x); 0 < a < 1 bo'lsa f(x) < g(x)",
+        "explanation": "Asos 1 dan kichik bo'lganda tengsizlik belgisi teskarisiga o'zgaradi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_exp_1",
+        "difficulty": "Oson",
+        "problemText": "Tenglamani yeching: 2^(3x - 1) = 32",
+        "solutionSteps": [
+          "1. 32 sonini 2 ning darajasi ko'rinishida yozamiz: 32 = 2^5.",
+          "2. Asoslar teng bo'lgani uchun: 3x - 1 = 5.",
+          "3. 3x = 6 => x = 2."
+        ],
+        "finalAnswer": "2"
+      },
+      {
+        "id": "ex_exp_2",
+        "difficulty": "O'rta",
+        "problemText": "Tenglamani yeching: 4^x - 3 * 2^x - 4 = 0",
+        "solutionSteps": [
+          "1. 4^x = (2^x)^2 deb olib, 2^x = t (t > 0) almashtirish kiritamiz.",
+          "2. t^2 - 3t - 4 = 0 kvadrat tenglama hosil bo'ladi.",
+          "3. Ildizlar: t_1 = 4, t_2 = -1.",
+          "4. t > 0 bo'lgani uchun t = -1 chet ildiz. 2^x = 4 => x = 2."
+        ],
+        "finalAnswer": "2"
+      },
+      {
+        "id": "ex_exp_3",
+        "difficulty": "Murakkab",
+        "problemText": "Tengsizlikni yeching: (0.5)^(x^2 - 3) >= 1/4",
+        "solutionSteps": [
+          "1. 1/4 sonini 0.5 ning asosi bilan yozamiz: 1/4 = (1/2)^2 = (0.5)^2.",
+          "2. Asos 0.5 < 1 bo'lgani sababli daraja ko'rsatkichlari uchun tengsizlik belgisi teskarisiga o'zgaradi: x^2 - 3 <= 2.",
+          "3. x^2 <= 5 => -sqrt(5) <= x <= sqrt(5)."
+        ],
+        "finalAnswer": "[-sqrt(5); sqrt(5)]"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Asos 0 va 1 oralig'ida bo'lganda belgi o'zgarishini unutish",
+        "wrongApproach": "(1/3)^x > (1/3)^2 => x > 2 deb yechish.",
+        "correctApproach": "(1/3) < 1 bo'lgani uchun kamayuvchi funksiya: x < 2.",
+        "reason": "Asos 1 dan kichik bo'lsa, argument kattalashgani sari qiymat kichrayadi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_exp_1",
+        "questionText": "3^(x + 2) = 27 tenglamani yeching.",
+        "hint": "27 = 3^3 ekanidan foydalaning.",
+        "answer": "1",
+        "explanation": "x + 2 = 3 => x = 1."
+      }
+    ],
+    "revisionRecommendation": "Yangi o'zgaruvchi kiritish usuli bilan yechiladigan ko'rsatkichli tenglamalarni takrorlang."
+  },
+  {
+    "id": "lesson_logarithms",
+    "topicId": "topic_logarithms",
+    "title": "Logarifmlar, ularning xossalari va tenglamalar",
+    "definition": "b sonining a asosga ko'ra logarifmi deb, b sonini hosil qilish uchun a sonini ko'tarish kerak bo'lgan daraja ko'rsatkichiga aytiladi: log_a(b) = c <=> a^c = b (bunda a > 0, a != 1, b > 0).",
+    "prerequisites": [
+      "Daraja va uning xossalari",
+      "Ko'rsatkichli funksiya va uning grafigi",
+      "Chiziqli va kvadrat tenglamalarni yechish"
+    ],
+    "formulas": [
+      {
+        "title": "Asosiy logarifmik ayniyat",
+        "formula": "a^(log_a(b)) = b",
+        "explanation": "a > 0, a != 1, b > 0 shartlarda o'rinli."
+      },
+      {
+        "title": "Ko'paytmaning logarifmi",
+        "formula": "log_a(x * y) = log_a(x) + log_a(y)",
+        "explanation": "Bir xil asosli logarifmlar yig'indisi ko'paytmaning logarifmiga teng."
+      },
+      {
+        "title": "Bo'linmaning logarifmi",
+        "formula": "log_a(x / y) = log_a(x) - log_a(y)",
+        "explanation": "Bir xil asosli logarifmlar ayirmasi bo'linmaning logarifmiga teng."
+      },
+      {
+        "title": "Daraja ko'rsatkichini oldinga chiqarish",
+        "formula": "log_a(x^p) = p * log_a(x)",
+        "explanation": "Logarifm ostidagi sonning darajasi oldinga ko'paytuvchi bo'lib chiqadi."
+      },
+      {
+        "title": "Yangi asosga o'tish",
+        "formula": "log_a(b) = log_c(b) / log_c(a)",
+        "explanation": "Ixtiyoriy musbat va 1 ga teng bo'lmagan c asosi tanlanishi mumkin."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_log_1",
+        "difficulty": "Oson",
+        "problemText": "Hisoblang: log_2(32)",
+        "solutionSteps": [
+          "32 sonini 2 ning darajasi shaklida yozib olamiz: 32 = 2^5.",
+          "Logarifm ta'rifiga ko'ra: log_2(2^5) ifodada daraja qoidasidan foydalanamiz.",
+          "log_2(2^5) = 5 * log_2(2) = 5 * 1 = 5."
+        ],
+        "finalAnswer": "5"
+      },
+      {
+        "id": "ex_log_2",
+        "difficulty": "O'rta",
+        "problemText": "Tenglamani yeching: log_3(x - 1) = 2",
+        "solutionSteps": [
+          "1-qadam: Aniqlanish sohasini (D(f)) aniqlaymiz: logarifm ostidagi ifoda qat'iy musbat bo'lishi shart, ya'ni x - 1 > 0 => x > 1.",
+          "2-qadam: Logarifm ta'rifidan foydalanib ko'rsatkichli shaklga o'tamiz: x - 1 = 3^2.",
+          "3-qadam: 3^2 = 9 bo'lgani uchun: x - 1 = 9 => x = 10.",
+          "4-qadam: Aniqlanish sohasini tekshiramiz: 10 > 1 shart bajariladi, demak x = 10 yagona ildiz."
+        ],
+        "finalAnswer": "10"
+      },
+      {
+        "id": "ex_log_3",
+        "difficulty": "Murakkab",
+        "problemText": "Tenglamaning barcha ildizlari yig'indisini toping: log_2(x) + log_2(x - 2) = 3",
+        "solutionSteps": [
+          "1-qadam: Aniqlanish sohasi: x > 0 va x - 2 > 0 => x > 2.",
+          "2-qadam: Yig'indi qoidasiga ko'ra bitta logarifmga keltiramiz: log_2(x * (x - 2)) = 3.",
+          "3-qadam: Ta'rifga ko'ra: x(x - 2) = 2^3 = 8.",
+          "4-qadam: Kvadrat tenglamani hosil qilamiz: x^2 - 2x - 8 = 0.",
+          "5-qadam: Viyet teoremasiga ko'ra ildizlar: x_1 = 4, x_2 = -2.",
+          "6-qadam: Aniqlanish sohasi (x > 2) bilan tekshiramiz: x = -2 chet ildiz! Faqat x = 4 qanoatlantiradi."
+        ],
+        "finalAnswer": "4"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Aniqlanish sohasini tekshirmaslik",
+        "wrongApproach": "log_3(x - 1) = 2 da faqat algebraik yechib, manfiy yoki cheklovdan tashqari ildizlarni ham qabul qilish.",
+        "correctApproach": "Har doim logarifm ostidagi ifoda > 0 va asos > 0, asos != 1 shartlarini dastlab yozib olish shart.",
+        "reason": "Logarifmik funksiya manfiy sonlar va nol uchun haqiqiy sonlar sohasida aniqlanmagan."
+      },
+      {
+        "mistakeTitle": "Logarifmlar yig'indisini argumentlar yig'indisiga tenglash",
+        "wrongApproach": "log_a(x) + log_a(y) = log_a(x + y) deb yozish.",
+        "correctApproach": "log_a(x) + log_a(y) = log_a(x * y) bo'ladi! Masalan: log_10(2) + log_10(3) = log_10(6), lekin log_10(5) emas.",
+        "reason": "Darajalar ko'paytirilganda ko'rsatkichlar qo'shiladi: a^u * a^v = a^(u+v)."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_log_1",
+        "questionText": "Hisoblang: log_5(125) - log_3(81)",
+        "hint": "125 = 5^3 va 81 = 3^4 ekanligidan foydalaning.",
+        "answer": "-1",
+        "explanation": "log_5(5^3) = 3 va log_3(3^4) = 4. Natija: 3 - 4 = -1."
+      }
+    ],
+    "revisionRecommendation": "Logarifmik tenglamalarni yechishda avval har doim aniqlanish sohasini yozib oling. Asos 1 dan kichik bo'lganda tengsizlik belgisi qarama-qarshisiga o'zgarishini unutmang!"
+  },
+  {
+    "id": "lesson_trigonometry",
+    "topicId": "topic_trigonometry",
+    "title": "Trigonometriya: Ayniyatlar, standart burchaklar va tenglamalar",
+    "definition": "Trigonometriya — burchaklar va ularning funksiyalari (sinus, kosinus, tangens, kotangens) hamda ularning geometrik va algebraik tatbiqlarini o'rganuvchi bo'limdir.",
+    "prerequisites": [
+      "To'g'ri burchakli uchburchak xossalari",
+      "Pifagor teoremasi",
+      "Birlik aylana va koordinata tekisligi"
+    ],
+    "formulas": [
+      {
+        "title": "Asosiy trigonometrik ayniyat",
+        "formula": "sin^2(x) + cos^2(x) = 1",
+        "explanation": "Ixtiyoriy x burchak uchun birlik aylanadan kelib chiqadi."
+      },
+      {
+        "title": "Tangens va kotangens ta'rifi",
+        "formula": "tg(x) = sin(x)/cos(x), ctg(x) = cos(x)/sin(x)",
+        "explanation": "cos(x) != 0 va sin(x) != 0 shartlarda."
+      },
+      {
+        "title": "Ikkilangan burchak formulalari",
+        "formula": "sin(2x) = 2*sin(x)*cos(x), cos(2x) = cos^2(x) - sin^2(x)",
+        "explanation": "Argumentni ikki barobar qisqartirish uchun qo'llaniladi."
+      },
+      {
+        "title": "Standart qiymatlar",
+        "formula": "sin(30°) = 1/2, cos(60°) = 1/2, sin(45°) = cos(45°) = sqrt(2)/2",
+        "explanation": "Keng qo'llaniladigan standart burchak qiymatlari."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_trig_1",
+        "difficulty": "Oson",
+        "problemText": "Ifodaning qiymatini hisoblang: sin(30°) + cos(60°)",
+        "solutionSteps": [
+          "Birlik aylanadagi standart burchak qiymatlarini eslaymiz.",
+          "sin(30°) = 1/2 = 0.5.",
+          "cos(60°) = 1/2 = 0.5.",
+          "Yig'indini hisoblaymiz: 0.5 + 0.5 = 1."
+        ],
+        "finalAnswer": "1"
+      },
+      {
+        "id": "ex_trig_2",
+        "difficulty": "O'rta",
+        "problemText": "[0°; 360°] oraliqda 2*sin(x) = 1 tenglamaning barcha ildizlarini toping.",
+        "solutionSteps": [
+          "1-qadam: Tenglamani soddalashtiramiz: sin(x) = 1/2.",
+          "2-qadam: Birlik aylanada ordinatasi 1/2 bo'lgan nuqtalarni topamiz. Sinus I va II choraklarda musbat.",
+          "3-qadam: I chorakdagi ildiz: x_1 = 30°.",
+          "4-qadam: II chorakdagi ildiz: x_2 = 180° - 30° = 150°.",
+          "5-qadam: Berilgan [0°; 360°] oraliqda aynan ikkita ildiz mavjud: 30° va 150°."
+        ],
+        "finalAnswer": "30°, 150°"
+      },
+      {
+        "id": "ex_trig_3",
+        "difficulty": "Murakkab",
+        "problemText": "Ayniyatni isbotlang yoki qiymatini toping: (sin(x) + cos(x))^2 - sin(2x)",
+        "solutionSteps": [
+          "Qisqa ko'paytirish formulasiga ko'ra qavsni ochamiz: sin^2(x) + 2*sin(x)*cos(x) + cos^2(x) - sin(2x).",
+          "sin^2(x) + cos^2(x) = 1 ekanligini bilamiz.",
+          "2*sin(x)*cos(x) = sin(2x) ikkilangan burchak formulasiga teng.",
+          "O'rniga qo'yamiz: 1 + sin(2x) - sin(2x) = 1."
+        ],
+        "finalAnswer": "1"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Faqat birinchi chorakdagi ildizni yozish",
+        "wrongApproach": "2*sin(x) = 1 tenglamada faqat x = 30° ni olib, ikkinchi chorakdagi 150° ni unutib qoldirish.",
+        "correctApproach": "Sinus musbat bo'lgan ikkala chorak (I va II choraklar) tahlil qilinishi lozim.",
+        "reason": "Birlik aylanada gorizontal chiziq y = 1/2 aylanani ikkita nuqtada kesadi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_trig_1",
+        "questionText": "Hisoblang: tg(45°) + ctg(45°)",
+        "hint": "tg(45°) = 1 va ctg(45°) = 1.",
+        "answer": "2",
+        "explanation": "1 + 1 = 2."
+      }
+    ],
+    "revisionRecommendation": "Trigonometrik tenglamalarda berilgan oraliqqa qat'iy e'tibor bering. Keltirish formulalarida chorakka qarab ishorani tekshirishni odat qiling."
+  },
+  {
+    "id": "lesson_progressions",
+    "topicId": "topic_progressions",
+    "title": "Arifmetik va geometrik progressiyalar",
+    "definition": "Arifmetik progressiyada har bir had oldingisiga o'zgarmas d sonini qo'shishdan, geometrik progressiyada esa o'zgarmas q soniga ko'paytirishdan hosil bo'ladi.",
+    "prerequisites": [
+      "Ketma-ketliklar",
+      "Chiziqli tenglamalar"
+    ],
+    "formulas": [
+      {
+        "title": "Arifmetik progressiya n-hadi va yig'indisi",
+        "formula": "a_n = a_1 + (n - 1)d; S_n = (a_1 + a_n) / 2 * n",
+        "explanation": "a_1 - dastlabki had, d - ayirma, n - hadlar soni."
+      },
+      {
+        "title": "Geometrik progressiya n-hadi va yig'indisi",
+        "formula": "b_n = b_1 * q^(n-1); S_n = b_1 * (1 - q^n) / (1 - q)",
+        "explanation": "b_1 - birinchi had, q - maxraj (q != 1)."
+      },
+      {
+        "title": "Cheksiz kamayuvchi geometrik qator",
+        "formula": "S = b_1 / (1 - q) (|q| < 1)",
+        "explanation": "Cheksiz kamayuvchi hadlar yig'indisini hisoblash formulasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_prog_1",
+        "difficulty": "Oson",
+        "problemText": "Arifmetik progressiyada a_1 = 3, d = 4 bo'lsa, a_15 ni toping.",
+        "solutionSteps": [
+          "1. N-had formulasini qo'llaymiz: a_15 = a_1 + (15 - 1) * d.",
+          "2. a_15 = 3 + 14 * 4 = 3 + 56 = 59."
+        ],
+        "finalAnswer": "59"
+      },
+      {
+        "id": "ex_prog_2",
+        "difficulty": "O'rta",
+        "problemText": "Dastlabki 20 ta natural juft sonlar yig'indisini toping.",
+        "solutionSteps": [
+          "1. Ketma-ketlik: 2, 4, 6, ..., a_20 = 2 * 20 = 40.",
+          "2. a_1 = 2, a_20 = 40, n = 20.",
+          "3. Yig'indi: S_20 = (2 + 40) / 2 * 20 = 42 * 10 = 420."
+        ],
+        "finalAnswer": "420"
+      },
+      {
+        "id": "ex_prog_3",
+        "difficulty": "Murakkab",
+        "problemText": "Geometrik progressiyada b_1 = 8 va q = 1/2 bo'lsa, cheksiz hadlar yig'indisini toping.",
+        "solutionSteps": [
+          "1. |q| = 1/2 < 1 bo'lgani sababli bu cheksiz kamayuvchi geometrik qatordir.",
+          "2. S = b_1 / (1 - q) formulasidan foydalanamiz.",
+          "3. S = 8 / (1 - 1/2) = 8 / 0.5 = 16."
+        ],
+        "finalAnswer": "16"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Had nomerida 1 ni ayirishni unutish",
+        "wrongApproach": "a_n = a_1 + n*d deb hisoblash.",
+        "correctApproach": "Birinchi had a_1 da d qo'shilmagan, shuning uchun n-hadda aynan (n - 1) ta d qo'shiladi.",
+        "reason": "Ketma-ketlik 1-haddan boshlanadi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_prog_1",
+        "questionText": "a_1 = 5, d = 2 bo'lgan arifmetik progressiyaning dastlabki 10 ta hadi yig'indisini toping.",
+        "hint": "a_10 ni toping (5 + 9*2 = 23), so'ngra S_10 = (a_1 + a_10)/2 * 10 formulasini qo'llang.",
+        "answer": "140",
+        "explanation": "S_10 = (5 + 23) / 2 * 10 = 14 * 10 = 140."
+      }
+    ],
+    "revisionRecommendation": "Arifmetik va geometrik o'rta qiymat xossalarini (a_k = (a_(k-1) + a_(k+1))/2) takrorlang."
+  },
+  {
+    "id": "lesson_limits",
+    "topicId": "topic_limits",
+    "title": "Limitlar va funksiyaning uzluksizligi",
+    "definition": "Funksiya argumenti biror nuqtaga cheksiz yaqinlashganda funksiya qiymatining intiladigan chegarasi funksiya limiti deyiladi.",
+    "prerequisites": [
+      "Funksiyalar",
+      "Ko'phadlarni ko'paytuvchilarga ajratish"
+    ],
+    "formulas": [
+      {
+        "title": "Birinchi ajoyib limit",
+        "formula": "lim_(x->0) (sin(x) / x) = 1",
+        "explanation": "Burchak radianlarda o'lchanganda o'rinli."
+      },
+      {
+        "title": "0/0 ko'rinishidagi aniqmaslik",
+        "formula": "lim_(x->a) (P(x) / Q(x))",
+        "explanation": "Surat va maxraj (x - a) ko'paytuvchiga ajratilib, 0 ga aylanuvchi had qisqartiriladi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_lim_1",
+        "difficulty": "Oson",
+        "problemText": "Hisoblang: lim_(x->2) (3x^2 - 5x + 4)",
+        "solutionSteps": [
+          "1. Funksiya x = 2 nuqtada uzluksiz bo'lgani sababli, x o'rniga 2 ni to'g'ridan-to'g'ri qo'yamiz.",
+          "2. 3*(2)^2 - 5*(2) + 4 = 3*4 - 10 + 4 = 12 - 10 + 4 = 6."
+        ],
+        "finalAnswer": "6"
+      },
+      {
+        "id": "ex_lim_2",
+        "difficulty": "O'rta",
+        "problemText": "Hisoblang: lim_(x->3) (x^2 - 9) / (x - 3)",
+        "solutionSteps": [
+          "1. x = 3 qo'yganda 0/0 aniqmaslik hosil bo'ladi.",
+          "2. Suratni ko'paytuvchilarga ajratamiz: (x - 3)(x + 3) / (x - 3).",
+          "3. x != 3 shartda (x - 3) ni qisqartiramiz: lim_(x->3) (x + 3) = 3 + 3 = 6."
+        ],
+        "finalAnswer": "6"
+      },
+      {
+        "id": "ex_lim_3",
+        "difficulty": "Murakkab",
+        "problemText": "Hisoblang: lim_(x->0) (sin(5x) / (2x))",
+        "solutionSteps": [
+          "1. Birinchi ajoyib limitga keltiramiz: sin(5x) / (5x) * (5/2).",
+          "2. lim_(x->0) (sin(5x) / 5x) = 1 bo'lgani sababli, natija 1 * (5/2) = 2.5."
+        ],
+        "finalAnswer": "2.5 (yoki 5/2)"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "0/0 aniqmaslikni 0 yoki 1 deb qabul qilish",
+        "wrongApproach": "0/0 chiqqanda natijani darhol 0 yoki mavjud emas deb yozish.",
+        "correctApproach": "Aniqmaslikni ochish kerak: ko'paytuvchilarga ajratish yoki irratsionallikdan qutqarish orqali qisqartiriladi.",
+        "reason": "0/0 chekli ixtiyoriy songa intilishi mumkin."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_lim_1",
+        "questionText": "lim_(x->4) (x^2 - 16) / (x - 4) ning qiymatini toping.",
+        "hint": "Suratni (x - 4)(x + 4) ga ajratib, (x - 4) ni qisqartiring.",
+        "answer": "8",
+        "explanation": "lim_(x->4) (x + 4) = 4 + 4 = 8."
+      }
+    ],
+    "revisionRecommendation": "Aniqmaslik turlari (0/0, cheksiz/cheksiz) va ularni ochish qoidalarini mustahkamlang."
+  },
+  {
+    "id": "lesson_derivatives",
+    "topicId": "topic_derivatives",
+    "title": "Hosila: Qoidalar, urinma va ekstremumlar",
+    "definition": "Funksiya orttirmasining argument orttirmasiga nisbatining argument orttirmasi nolga intilgandagi limiti funksiyaning hosilasi deyiladi: f'(x) = lim_{dx->0} (f(x+dx) - f(x)) / dx.",
+    "prerequisites": [
+      "Funksiyalar va ularning grafiklari",
+      "Burchak koeffitsiyenti tushunchasi",
+      "Darajali ifodalar"
+    ],
+    "formulas": [
+      {
+        "title": "Darajali funksiya hosilasi",
+        "formula": "(x^n)' = n * x^(n-1)",
+        "explanation": "Asosiy qoida. Masalan: (x^3)' = 3x^2."
+      },
+      {
+        "title": "O'zgarmas son hosilasi",
+        "formula": "(C)' = 0, (C * f(x))' = C * f'(x)",
+        "explanation": "O'zgarmas ko'paytuvchi hosila belgisidan tashqariga chiqariladi."
+      },
+      {
+        "title": "Yig'indi va ayirma hosilasi",
+        "formula": "(u +- v)' = u' +- v'",
+        "explanation": "Har bir haddan alohida hosila olinadi."
+      },
+      {
+        "title": "Urinma tenglamasi",
+        "formula": "y = f(x_0) + f'(x_0) * (x - x_0)",
+        "explanation": "k = f'(x_0) urinmaning burchak koeffitsiyenti."
+      },
+      {
+        "title": "Ekstremum sharti (Ferma teoremasi)",
+        "formula": "f'(x) = 0",
+        "explanation": "Funksiya maksimum yoki minimumga erishadigan statsionar nuqtalar."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_der_1",
+        "difficulty": "Oson",
+        "problemText": "f(x) = x^3 - 4x funksiyaning hosilasini toping.",
+        "solutionSteps": [
+          "Yig'indi hosilasi qoidasidan foydalanamiz: (x^3 - 4x)' = (x^3)' - (4x)'.",
+          "Daraja qoidasiga ko'ra: (x^3)' = 3 * x^(3-1) = 3x^2.",
+          "Chiziqli had hosilasi: (4x)' = 4 * 1 = 4.",
+          "Natijalarni birlashtiramiz: f'(x) = 3x^2 - 4."
+        ],
+        "finalAnswer": "3x^2 - 4"
+      },
+      {
+        "id": "ex_der_2",
+        "difficulty": "O'rta",
+        "problemText": "y = 3x^2 - 6x + 1 funksiya grafigiga x_0 = 2 nuqtada o'tkazilgan urinmaning burchak koeffitsiyentini y'(2) toping.",
+        "solutionSteps": [
+          "1-qadam: Funksiyaning hosilasini olamiz: y' = (3x^2)' - (6x)' + (1)'.",
+          "y' = 3*(2x) - 6 + 0 = 6x - 6.",
+          "2-qadam: x_0 = 2 nuqtadagi hosila qiymatini hisoblaymiz:",
+          "y'(2) = 6*(2) - 6 = 12 - 6 = 6."
+        ],
+        "finalAnswer": "6"
+      },
+      {
+        "id": "ex_der_3",
+        "difficulty": "Murakkab",
+        "problemText": "f(x) = x^3 - 3x^2 + 5 funksiyaning minimum nuqtasini toping.",
+        "solutionSteps": [
+          "1-qadam: Hosilani hisoblaymiz: f'(x) = 3x^2 - 6x.",
+          "2-qadam: Hosilani nolga tenglaymiz: 3x(x - 2) = 0 => x_1 = 0, x_2 = 2.",
+          "3-qadam: Oraliqlar metodi orqali hosila ishorasini tekshiramiz:",
+          "x < 0 da f'(x) > 0 (o'sadi); 0 < x < 2 da f'(x) < 0 (kamayadi); x > 2 da f'(x) > 0 (o'sadi).",
+          "4-qadam: x = 0 da musbatdan manfiyga o'tgani uchun maksimum nuqta; x = 2 da manfiydan musbatga o'tgani uchun minimum nuqtadir."
+        ],
+        "finalAnswer": "x = 2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "O'zgarmas son hosilasini o'zi deb hisoblash",
+        "wrongApproach": "(x^2 + 5)' = 2x + 5 deb yozish.",
+        "correctApproach": "Har qanday sonning hosilasi 0 ga teng: (5)' = 0, shuning uchun (x^2 + 5)' = 2x.",
+        "reason": "O'zgarmas son o'zgarmaydi, ya'ni uning o'zgarish tezligi (hosilasi) nolga teng."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_der_1",
+        "questionText": "y = 5x^4 - 2x funksiya uchun y'(1) ni hisoblang.",
+        "hint": "Avval y' ni toping: y' = 20x^3 - 2.",
+        "answer": "18",
+        "explanation": "y'(1) = 20*(1)^3 - 2 = 20 - 2 = 18."
+      }
+    ],
+    "revisionRecommendation": "Funksiya o'sishi uchun f'(x) > 0, kamayishi uchun f'(x) < 0 bo'ladi. Ekstremum nuqtada hosila nolga teng yoki mavjud emas."
+  },
+  {
+    "id": "lesson_integrals",
+    "topicId": "topic_integrals",
+    "title": "Integrallar: Boshlang'ich funksiya va aniq integral",
+    "definition": "Agar berilgan oraliqda F'(x) = f(x) tenglik bajarilsa, F(x) funksiya f(x) ning boshlang'ich funksiyasi deyiladi. Barcha boshlang'ich funksiyalar to'plami aniqmas integral deyiladi: int f(x) dx = F(x) + C.",
+    "prerequisites": [
+      "Hosila olish qoidalari va jadvallari",
+      "Algebraik shakl almashtirishlar",
+      "Geometrik yuzalar tushunchasi"
+    ],
+    "formulas": [
+      {
+        "title": "Darajali funksiya integrali",
+        "formula": "int x^n dx = (x^(n+1)) / (n+1) + C",
+        "explanation": "n != -1 shartda. Masalan: int x dx = x^2/2 + C."
+      },
+      {
+        "title": "O'zgarmas son integrali",
+        "formula": "int k dx = kx + C",
+        "explanation": "Masalan: int 3 dx = 3x + C."
+      },
+      {
+        "title": "Nyuton-Leybnis formulasi",
+        "formula": "int_a^b f(x) dx = F(b) - F(a)",
+        "explanation": "Aniq integralni boshlang'ich funksiya orqali hisoblash."
+      },
+      {
+        "title": "Egri chiziqli trapetsiya yuzi",
+        "formula": "S = int_a^b f(x) dx",
+        "explanation": "f(x) >= 0 bo'lganda funksiya grafigi ostidagi yuza."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_int_1",
+        "difficulty": "Oson",
+        "problemText": "Ifodaning aniqmas integralini toping: int (2x + 3) dx",
+        "solutionSteps": [
+          "Integrallar yig'indisi qoidasidan foydalanamiz: int 2x dx + int 3 dx.",
+          "int 2x dx = 2 * (x^2 / 2) = x^2.",
+          "int 3 dx = 3x.",
+          "Ixtiyoriy o'zgarmas C ni qo'shamiz: x^2 + 3x + C."
+        ],
+        "finalAnswer": "x^2 + 3x + C"
+      },
+      {
+        "id": "ex_int_2",
+        "difficulty": "O'rta",
+        "problemText": "Aniq integralni hisoblang: int_0^2 x dx",
+        "solutionSteps": [
+          "1-qadam: x funksiyaning boshlang'ich funksiyasini topamiz: F(x) = x^2 / 2.",
+          "2-qadam: Nyuton-Leybnis formulasiga ko'ra chegaralarni qo'yamiz: [x^2 / 2]_0^2.",
+          "3-qadam: Yuqori chegarani qo'yamiz: F(2) = 2^2 / 2 = 4 / 2 = 2.",
+          "4-qadam: Quyi chegarani qo'yamiz: F(0) = 0^2 / 2 = 0.",
+          "5-qadam: Ayirmani hisoblaymiz: F(2) - F(0) = 2 - 0 = 2."
+        ],
+        "finalAnswer": "2"
+      },
+      {
+        "id": "ex_int_3",
+        "difficulty": "Murakkab",
+        "problemText": "y = 4 - x^2 parabola va Ox o'qi bilan chegaralangan soha yuzini hisoblang.",
+        "solutionSteps": [
+          "1-qadam: Ox o'qi bilan kesishish nuqtalarini topamiz (chegaralar): 4 - x^2 = 0 => x = -2 va x = 2.",
+          "2-qadam: [-2; 2] oraliqda 4 - x^2 >= 0 bo'lgani uchun yuza aniq integralga teng: S = int_{-2}^2 (4 - x^2) dx.",
+          "3-qadam: Boshlang'ich funksiya: F(x) = 4x - x^3 / 3.",
+          "4-qadam: F(2) = 4(2) - 8/3 = 8 - 8/3 = 16/3.",
+          "5-qadam: F(-2) = 4(-2) - (-8)/3 = -8 + 8/3 = -16/3.",
+          "6-qadam: S = F(2) - F(-2) = 16/3 - (-16/3) = 32/3 = 10 va 2/3."
+        ],
+        "finalAnswer": "32/3"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Aniqmas integralda o'zgarmas C ni unutish",
+        "wrongApproach": "int (2x + 3) dx = x^2 + 3x deb yozish.",
+        "correctApproach": "Har doim + C o'zgarmasini yozish shart: x^2 + 3x + C.",
+        "reason": "Har qanday o'zgarmas sonning hosilasi nolga teng bo'lgani uchun cheksiz ko'p boshlang'ich funksiyalar mavjud."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_int_1",
+        "questionText": "Hisoblang: int_1^3 2 dx",
+        "hint": "Boshlang'ich funksiya 2x.",
+        "answer": "4",
+        "explanation": "2*(3) - 2*(1) = 6 - 2 = 4."
+      }
+    ],
+    "revisionRecommendation": "Aniq integral son qiymatga ega, aniqmas integral esa funksiyalar oilasidir. Nyuton-Leybnis formulasida F(b) - F(a) tartibiga rioya qiling."
+  },
+  {
+    "id": "lesson_geometry_plane",
+    "topicId": "topic_geometry_plane",
+    "title": "Planimetriya asoslari: Nuqtalar, to'g'ri chiziqlar va burchaklar",
+    "definition": "Geometriyaning tekislikdagi asosiy ob'ektlari: nuqta, to'g'ri chiziq, nur, kesma, parallel va perpendikulyar to'g'ri chiziqlar hamda burchaklar tushunchalari.",
+    "prerequisites": [
+      "Burchak o'lchovi (gradus)",
+      "To'g'ri chiziqlar"
+    ],
+    "formulas": [
+      {
+        "title": "Qo'shni burchaklar",
+        "formula": "α + β = 180°",
+        "explanation": "Bitta umumiy tomonga ega bo'lib, qolgan ikki tomoni to'ldiruvchi nurlar bo'lgan burchaklar yig'indisi 180° ga teng."
+      },
+      {
+        "title": "Vertikal burchaklar",
+        "formula": "α = β",
+        "explanation": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan vertikal burchaklar o'zaro tengdir."
+      },
+      {
+        "title": "Parallel to'g'ri chiziqlarni kesuvchi bilan kesgandagi burchaklar",
+        "formula": "Ichki almashinuvchi: α = β; Mos burchaklar: α = γ",
+        "explanation": "Ichki bir tomonli burchaklar yig'indisi esa 180° ga teng."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_gp_1",
+        "difficulty": "Oson",
+        "problemText": "Qo'shni burchaklardan biri 65° ga teng. Ikkinchi burchakni toping.",
+        "solutionSteps": [
+          "1. Qo'shni burchaklar yig'indisi 180° ga teng: α + β = 180°.",
+          "2. β = 180° - 65° = 115°."
+        ],
+        "finalAnswer": "115°"
+      },
+      {
+        "id": "ex_gp_2",
+        "difficulty": "O'rta",
+        "problemText": "Ikki to'g'ri chiziq kesishganda hosil bo'lgan uchta burchak yig'indisi 280° ga teng. To'rtinchi burchakni toping.",
+        "solutionSteps": [
+          "1. To'rtta burchakning to'liq yig'indisi 360° ga teng.",
+          "2. To'rtinchi burchak = 360° - 280° = 80°."
+        ],
+        "finalAnswer": "80°"
+      },
+      {
+        "id": "ex_gp_3",
+        "difficulty": "Murakkab",
+        "problemText": "Parallel to'g'ri chiziqlarni kesuvchi to'g'ri chiziq kesib o'tganda ichki bir tomonli burchaklar ayirmasi 40° ga teng bo'lsa, ularning kattasini toping.",
+        "solutionSteps": [
+          "1. Ichki bir tomonli burchaklar yig'indisi 180°: α + β = 180°.",
+          "2. Ayirmasi: α - β = 40°.",
+          "3. Qo'shsak: 2α = 220° => α = 110°.",
+          "4. Kichigi: β = 180° - 110° = 70°."
+        ],
+        "finalAnswer": "110°"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Qo'shni va vertikal burchaklarni aralashtirish",
+        "wrongApproach": "Vertikal burchaklar yig'indisini 180° deb xulosa qilish.",
+        "correctApproach": "Vertikal burchaklar teng bo'ladi (α = β), qo'shni burchaklar yig'indisi esa 180° ga teng.",
+        "reason": "Vertikal burchaklar qarama-qarshi joylashadi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_geom_1",
+        "questionText": "Vertikal burchaklardan biri 48° bo'lsa, ikkinchisi necha gradus?",
+        "hint": "Vertikal burchaklar xossasini eslang: ular o'zaro teng.",
+        "answer": "48",
+        "explanation": "Vertikal burchaklar doimo tengdir: 48°."
+      }
+    ],
+    "revisionRecommendation": "Parallel to'g'ri chiziqlar alomatlari va kesuvchi burchaklarini mustahkamlang."
+  },
+  {
+    "id": "lesson_triangles",
+    "topicId": "topic_triangles",
+    "title": "Uchburchaklar geometriyasi: Pifagor, Geron va burchaklar",
+    "definition": "Uchburchak — tekislikda bir to'g'ri chiziqda yotmaydigan uchta nuqta va ularni tutashtiruvchi uchta kesmadan iborat asosiy geometrik shakl.",
+    "prerequisites": [
+      "Burchaklar",
+      "Planimetriya asoslari"
+    ],
+    "formulas": [
+      {
+        "title": "Pifagor teoremasi",
+        "formula": "c^2 = a^2 + b^2",
+        "explanation": "To'g'ri burchakli uchburchakda gipotenuza kvadrati katetlar kvadratlari yig'indisiga teng."
+      },
+      {
+        "title": "Uchburchak yuzi (balandlik orqali)",
+        "formula": "S = (1/2) * a * h_a",
+        "explanation": "Asos va unga tushirilgan balandlik ko'paytmasining yarmi."
+      },
+      {
+        "title": "Geron formulasi",
+        "formula": "S = sqrt(p(p - a)(p - b)(p - c)), p = (a + b + c)/2",
+        "explanation": "Uchala tomoni ma'lum bo'lgan ixtiyoriy uchburchak yuzi."
+      },
+      {
+        "title": "Kosinuslar teoremasi",
+        "formula": "c^2 = a^2 + b^2 - 2ab*cos(C)",
+        "explanation": "Ixtiyoriy uchburchakda ikki tomon va ular orasidagi burchak orqali uchinchi tomonni topish."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_tri_1",
+        "difficulty": "Oson",
+        "problemText": "To'g'ri burchakli uchburchakning katetlari 6 sm va 8 sm. Gipotenuzasini toping.",
+        "solutionSteps": [
+          "1. Pifagor teoremasi: c^2 = a^2 + b^2 = 6^2 + 8^2.",
+          "2. c^2 = 36 + 64 = 100 => c = 10 sm."
+        ],
+        "finalAnswer": "10 sm"
+      },
+      {
+        "id": "ex_tri_2",
+        "difficulty": "O'rta",
+        "problemText": "Tomonlari 5 sm, 6 sm va 7 sm bo'lgan uchburchakning yuzini toping.",
+        "solutionSteps": [
+          "1. Yarim perimetrni hisoblaymiz: p = (5 + 6 + 7) / 2 = 18 / 2 = 9 sm.",
+          "2. Geron formulasini qo'llaymiz: S = sqrt(9 * (9 - 5) * (9 - 6) * (9 - 7)).",
+          "3. S = sqrt(9 * 4 * 3 * 2) = sqrt(216) = sqrt(36 * 6) = 6*sqrt(6) sm^2."
+        ],
+        "finalAnswer": "6*sqrt(6) sm^2"
+      },
+      {
+        "id": "ex_tri_3",
+        "difficulty": "Murakkab",
+        "problemText": "Teng yonli uchburchakning asosi 12 sm, yon tomoni 10 sm. Asosiga tushirilgan balandlik va yuzini toping.",
+        "solutionSteps": [
+          "1. Teng yonli uchburchakda asosga tushirilgan balandlik asosni teng ikkiga bo'ladi: 12 / 2 = 6 sm.",
+          "2. To'g'ri burchakli uchburchakdan balandlikni Pifagor teoremasi bilan topamiz: h = sqrt(10^2 - 6^2) = sqrt(100 - 36) = sqrt(64) = 8 sm.",
+          "3. Uchburchak yuzi: S = (1/2) * a * h = (1/2) * 12 * 8 = 48 sm^2."
+        ],
+        "finalAnswer": "h = 8 sm, S = 48 sm^2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Uchburchak tengsizligini tekshirmaslik",
+        "wrongApproach": "Tomonlari 3, 4, 8 bo'lgan uchburchak mavjud deb hisoblash.",
+        "correctApproach": "Har qanday ikki tomon yig'indisi uchinchisidan qat'iy katta bo'lishi shart: 3 + 4 = 7 < 8 bo'lgani sababli bunday uchburchak mavjud emas.",
+        "reason": "Uchburchak yopilmaydi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_tri_1",
+        "questionText": "To'g'ri burchakli uchburchakning katetlari 3 sm va 4 sm. Uning yuzini toping.",
+        "hint": "To'g'ri burchakli uchburchak yuzi S = (a * b) / 2 ga teng.",
+        "answer": "6",
+        "explanation": "S = (3 * 4) / 2 = 12 / 2 = 6 sm^2."
+      }
+    ],
+    "revisionRecommendation": "Ichki va tashqi chizilgan aylanalar radiuslari formulalarini (r = S/p, R = abc/(4S)) takrorlang."
+  },
+  {
+    "id": "lesson_quadrilaterals",
+    "topicId": "topic_quadrilaterals",
+    "title": "To'rtburchaklar va ko'pburchaklar: Yuzalar va xossalar",
+    "definition": "Parallelogramm, romb, to'g'ri to'rtburchak, kvadrat va trapetsiya tekislikdagi asosiy to'rtburchaklar oilasini tashkil etadi.",
+    "prerequisites": [
+      "Uchburchaklar",
+      "Parallel to'g'ri chiziqlar"
+    ],
+    "formulas": [
+      {
+        "title": "Parallelogramm yuzi",
+        "formula": "S = a * h_a = a * b * sin(α)",
+        "explanation": "Asos va balandlik ko'paytmasi yoki ikki tomon va ular orasidagi burchak sinusi ko'paytmasi."
+      },
+      {
+        "title": "Romb yuzi",
+        "formula": "S = (1/2) * d_1 * d_2",
+        "explanation": "Romb diagonallari o'zaro perpendikulyar bo'lgani sababli yuz diagonallar ko'paytmasining yarmiga teng."
+      },
+      {
+        "title": "Trapetsiya yuzi",
+        "formula": "S = (a + b) / 2 * h",
+        "explanation": "Asoslar o'rta chizig'i va balandlik ko'paytmasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_quadr_1",
+        "difficulty": "Oson",
+        "problemText": "Rombning diagonallari 8 sm va 14 sm. Uning yuzini toping.",
+        "solutionSteps": [
+          "1. Romb yuzi formulasi: S = (d_1 * d_2) / 2.",
+          "2. S = (8 * 14) / 2 = 112 / 2 = 56 sm^2."
+        ],
+        "finalAnswer": "56 sm^2"
+      },
+      {
+        "id": "ex_quadr_2",
+        "difficulty": "O'rta",
+        "problemText": "Trapetsiyaning asoslari 7 sm va 13 sm, balandligi 6 sm. Uning yuzini hisoblang.",
+        "solutionSteps": [
+          "1. Asoslar yig'indisining yarmi (o'rta chiziq): (7 + 13) / 2 = 20 / 2 = 10 sm.",
+          "2. Yuz: S = 10 * 6 = 60 sm^2."
+        ],
+        "finalAnswer": "60 sm^2"
+      },
+      {
+        "id": "ex_quadr_3",
+        "difficulty": "Murakkab",
+        "problemText": "Parallelogrammning tomonlari 6 sm va 10 sm, o'tkir burchagi 30°. Uning yuzini toping.",
+        "solutionSteps": [
+          "1. Yuz formulasi: S = a * b * sin(α).",
+          "2. S = 6 * 10 * sin(30°) = 60 * 0.5 = 30 sm^2."
+        ],
+        "finalAnswer": "30 sm^2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Trapetsiya yuzida asoslarni ko'paytirib yuborish",
+        "wrongApproach": "S = a * b * h deb hisoblash.",
+        "correctApproach": "Asoslar qo'shilib, ikkiga bo'linadi: S = ((a + b) / 2) * h.",
+        "reason": "Trapetsiya to'g'ri to'rtburchak emas, uning o'rtacha eni asoslar o'rta arifmetigidir."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_quadr_1",
+        "questionText": "Trapetsiya asoslari 4 sm va 10 sm, balandligi 5 sm. Yuzini hisoblang.",
+        "hint": "S = (a + b) / 2 * h formulasidan foydalaning.",
+        "answer": "35",
+        "explanation": "S = (4 + 10) / 2 * 5 = 7 * 5 = 35 sm^2."
+      }
+    ],
+    "revisionRecommendation": "Ko'pburchaklar ichki burchaklari yig'indisi (n - 2)*180° formulasini esda saqlang."
+  },
+  {
+    "id": "lesson_circles",
+    "topicId": "topic_circles",
+    "title": "Aylana va doira geometriyasi",
+    "definition": "Tekislikda berilgan nuqtadan (markazdan) bir xil masofada (radius) yotgan nuqtalar to'plami aylana, u bilan chegaralangan tekislik qismi esa doira deyiladi.",
+    "prerequisites": [
+      "Burchaklar",
+      "Planimetriya asoslari"
+    ],
+    "formulas": [
+      {
+        "title": "Aylana uzunligi va Doira yuzi",
+        "formula": "C = 2πr = πd; S = πr^2",
+        "explanation": "r - radius, d - diametr (d = 2r)."
+      },
+      {
+        "title": "Sektor yuzi va Yoy uzunligi",
+        "formula": "S_sektor = (πr^2 * α) / 360°; l_yoy = (πr * α) / 180°",
+        "explanation": "α - markaziy burchakning gradus o'lchovi."
+      },
+      {
+        "title": "Markaziy va Ichki chizilgan burchaklar",
+        "formula": "Ichki burchak = (1/2) * Markaziy burchak",
+        "explanation": "Bir xil yoyga tiralgan ichki chizilgan burchak markaziy burchakning yarmiga teng."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_circ_1",
+        "difficulty": "Oson",
+        "problemText": "Radiusi 5 sm bo'lgan doiraning yuzini va aylana uzunligini toping (π deb oling).",
+        "solutionSteps": [
+          "1. Doira yuzi: S = π * r^2 = π * 5^2 = 25π sm^2.",
+          "2. Aylana uzunligi: C = 2 * π * r = 2 * π * 5 = 10π sm."
+        ],
+        "finalAnswer": "S = 25π sm^2, C = 10π sm"
+      },
+      {
+        "id": "ex_circ_2",
+        "difficulty": "O'rta",
+        "problemText": "Radiusi 6 sm bo'lgan doiraning 60° li sektorining yuzini hisoblang.",
+        "solutionSteps": [
+          "1. To'liq doira yuzi: S = π * r^2 = π * 36 = 36π sm^2.",
+          "2. 60° li sektor to'liq aylananing 60/360 = 1/6 qismini tashkil qiladi.",
+          "3. S_sektor = 36π / 6 = 6π sm^2."
+        ],
+        "finalAnswer": "6π sm^2"
+      },
+      {
+        "id": "ex_circ_3",
+        "difficulty": "Murakkab",
+        "problemText": "Aylanada AB vatar o'tkazilgan bo'lib, unga tiralgan markaziy burchak 90° ga teng. Agar aylana radiusi 8 sm bo'lsa, AB vatar uzunligini toping.",
+        "solutionSteps": [
+          "1. Markaz O, uchburchak AOB to'g'ri burchakli teng yonli uchburchakdir (OA = OB = 8 sm, <AOB = 90°).",
+          "2. Pifagor teoremasiga ko'ra: AB^2 = OA^2 + OB^2 = 8^2 + 8^2 = 64 + 64 = 128.",
+          "3. AB = sqrt(128) = 8*sqrt(2) sm."
+        ],
+        "finalAnswer": "8*sqrt(2) sm"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Diametrga tiralgan burchakni adashtirish",
+        "wrongApproach": "Diametrga tiralgan ichki burchakni 180° deb o'ylash.",
+        "correctApproach": "Diametrga tiralgan ichki burchak har doim to'g'ri burchak, ya'ni 90° ga teng bo'ladi.",
+        "reason": "Yoy 180° bo'lgani uchun unga tiralgan ichki burchak 180/2 = 90° bo'ladi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_circ_1",
+        "questionText": "Radiusi 4 sm bo'lgan doira yuzini toping (natijani π ko'paytuvchisisiz, son qiymatida ko'rsating).",
+        "hint": "S = π * r^2 formulasidan foydalaning.",
+        "answer": "16π",
+        "explanation": "S = π * 4^2 = 16π sm^2."
+      }
+    ],
+    "revisionRecommendation": "Urinma va kesuvchilar teoremalarini (kesuvchilar ko'paytmasi va urinma kvadrati) mustahkamlang."
+  },
+  {
+    "id": "lesson_vectors",
+    "topicId": "topic_vectors",
+    "title": "Koordinatalar usuli va vektorlar algebrasi",
+    "definition": "Tekislikda va fazoda vektor deb yo'nalishga ega bo'lgan to'g'ri chiziq kesmasiga aytiladi. U koordinatalar bilan ifodalanadi va fizik kattaliklarni tavsiflaydi.",
+    "prerequisites": [
+      "Dekart koordinatalar sistemasi",
+      "Pifagor teoremasi"
+    ],
+    "formulas": [
+      {
+        "title": "Ikki nuqta orasidagi masofa",
+        "formula": "d = sqrt((x_2 - x_1)^2 + (y_2 - y_1)^2)",
+        "explanation": "Pifagor teoremasining koordinatalar sistemasidagi bevosita ifodasi."
+      },
+      {
+        "title": "Vektor uzunligi (moduli)",
+        "formula": "|a| = sqrt(x^2 + y^2)",
+        "explanation": "a(x; y) vektorining uzunligi koordinatalari kvadratlari yig'indisining ildiziga teng."
+      },
+      {
+        "title": "Vektorlarning skalyar ko'paytmasi",
+        "formula": "a * b = x_1*x_2 + y_1*y_2 = |a|*|b|*cos(φ)",
+        "explanation": "Perpendikulyar vektorlarning skalyar ko'paytmasi 0 ga teng (cos 90° = 0)."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_vec_1",
+        "difficulty": "Oson",
+        "problemText": "a(3; 4) vektorining uzunligini toping.",
+        "solutionSteps": [
+          "1. Modul formulasi: |a| = sqrt(x^2 + y^2).",
+          "2. |a| = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5."
+        ],
+        "finalAnswer": "5"
+      },
+      {
+        "id": "ex_vec_2",
+        "difficulty": "O'rta",
+        "problemText": "A(1; 2) va B(4; 6) nuqtalar orasidagi masofani hisoblang.",
+        "solutionSteps": [
+          "1. Masofa formulasi: d = sqrt((4 - 1)^2 + (6 - 2)^2).",
+          "2. d = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5."
+        ],
+        "finalAnswer": "5"
+      },
+      {
+        "id": "ex_vec_3",
+        "difficulty": "Murakkab",
+        "problemText": "a(2; -3) va b(6; k) vektorlar o'zaro perpendikulyar bo'lsa, k ning qiymatini toping.",
+        "solutionSteps": [
+          "1. Vektorlar perpendikulyar bo'lishi uchun ularning skalyar ko'paytmasi nolga teng bo'lishi shart: a * b = 0.",
+          "2. 2 * 6 + (-3) * k = 0.",
+          "3. 12 - 3k = 0 => 3k = 12 => k = 4."
+        ],
+        "finalAnswer": "4"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Skalyar ko'paytma natijasini vektor deb o'ylash",
+        "wrongApproach": "Skalyar ko'paytmani nuqta koordinatasi shaklida yozish.",
+        "correctApproach": "Skalyar ko'paytma bitta songa (skalyarga) teng bo'ladi: x_1*x_2 + y_1*y_2.",
+        "reason": "Ikki vektorning skalyar ko'paytmasi son qiymatdir."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_vec_1",
+        "questionText": "a(6; 8) vektorining uzunligini toping.",
+        "hint": "sqrt(6^2 + 8^2) ni hisoblang.",
+        "answer": "10",
+        "explanation": "sqrt(36 + 64) = sqrt(100) = 10."
+      }
+    ],
+    "revisionRecommendation": "Vektorlar orasidagi burchak kosinusini skalyar ko'paytma orqali hisoblashni takrorlang."
+  },
+  {
+    "id": "lesson_prisms",
+    "topicId": "topic_prisms",
+    "title": "Fazoviy geometriya: Prizmalar, parallelepiped, hajm va sirt",
+    "definition": "Ikki asosi parallel tekisliklarda yotuvchi teng ko'pburchaklardan, yon yoqlari esa parallelogrammlardan iborat ko'pyoq prizma deyiladi. Yon qirralari asosiga perpendikulyar bo'lgan prizma to'g'ri prizma deyiladi.",
+    "prerequisites": [
+      "Planimetriya: ko'pburchaklar va ularning yuzlari",
+      "Fazoda tekisliklarning parallelligi va perpendikulyarligi",
+      "Pifagor teoremasi fazoda"
+    ],
+    "formulas": [
+      {
+        "title": "Prizma hajmi",
+        "formula": "V = S_asos * h",
+        "explanation": "Asos yuzi va balandlik ko'paytmasiga teng."
+      },
+      {
+        "title": "To'g'ri prizma yon sirti",
+        "formula": "S_yon = P_asos * h",
+        "explanation": "Asos perimetri bilan balandlik ko'paytmasi."
+      },
+      {
+        "title": "Prizma to'la sirti",
+        "formula": "S_to'la = S_yon + 2 * S_asos",
+        "explanation": "Yon sirt va ikkita asos yuzi yig'indisi."
+      },
+      {
+        "title": "To'g'ri to'rtburchakli parallelepiped",
+        "formula": "V = a * b * c, S_to'la = 2*(ab + bc + ac)",
+        "explanation": "O'lchamlari a, b, c bo'lgan parallelepiped."
+      },
+      {
+        "title": "Parallelepiped fazoviy diagonali",
+        "formula": "d^2 = a^2 + b^2 + c^2",
+        "explanation": "Fazodagi Pifagor teoremasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_prism_1",
+        "difficulty": "Oson",
+        "problemText": "Prizmaning asos yuzi 18 sm^2 ga, balandligi esa 7 sm ga teng. Prizmaning hajmini hisoblang.",
+        "solutionSteps": [
+          "Prizma hajmi formulasini yozamiz: V = S_asos * h.",
+          "Berilgan qiymatlarni qo'yamiz: S_asos = 18 sm^2, h = 7 sm.",
+          "Ko'paytiramiz: V = 18 * 7 = 126 sm^3."
+        ],
+        "finalAnswer": "126 sm^3"
+      },
+      {
+        "id": "ex_prism_2",
+        "difficulty": "O'rta",
+        "problemText": "O'lchamlari 3 sm, 4 sm va 5 sm bo'lgan to'g'ri to'rtburchakli parallelepipedning to'la sirtini hisoblang.",
+        "solutionSteps": [
+          "To'la sirt formulasini qo'llaymiz: S_to'la = 2 * (a*b + b*c + a*c).",
+          "Juflik ko'paytmalarini hisoblaymiz: a*b = 3*4 = 12 sm^2; b*c = 4*5 = 20 sm^2; a*c = 3*5 = 15 sm^2.",
+          "Yig'indini topamiz: 12 + 20 + 15 = 47 sm^2.",
+          "2 ga ko'paytiramiz: S_to'la = 2 * 47 = 94 sm^2."
+        ],
+        "finalAnswer": "94 sm^2"
+      },
+      {
+        "id": "ex_prism_3",
+        "difficulty": "Murakkab",
+        "problemText": "To'g'ri uchburchakli prizma asosining tomonlari 6 sm, 8 sm va 10 sm bo'lib, prizma balandligi 12 sm ga teng. Prizmaning to'la sirtini toping.",
+        "solutionSteps": [
+          "1-qadam: Asos tomonlarini tahlil qilamiz: 6^2 + 8^2 = 36 + 64 = 100 = 10^2. Demak asos to'g'ri burchakli uchburchak!",
+          "2-qadam: Asos yuzi: S_asos = (6 * 8) / 2 = 24 sm^2.",
+          "3-qadam: Asos perimetri: P_asos = 6 + 8 + 10 = 24 sm.",
+          "4-qadam: Yon sirti: S_yon = P_asos * h = 24 * 12 = 288 sm^2.",
+          "5-qadam: To'la sirti: S_to'la = S_yon + 2 * S_asos = 288 + 2 * 24 = 288 + 48 = 336 sm^2."
+        ],
+        "finalAnswer": "336 sm^2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "To'la sirtda faqat bitta asos yuzini qo'shish",
+        "wrongApproach": "S_to'la = S_yon + S_asos deb hisoblash.",
+        "correctApproach": "Prizmaning IKKITA asosi bor (yuqori va quyi): S_to'la = S_yon + 2 * S_asos.",
+        "reason": "Piramidada 1 ta asos bo'ladi, lekin prizmada doimo 2 ta asos mavjud."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_prism_1",
+        "questionText": "Kubning qirrasi 4 sm bo'lsa, uning hajmini toping.",
+        "hint": "V = a^3.",
+        "answer": "64",
+        "explanation": "V = 4^3 = 64 sm^3."
+      }
+    ],
+    "revisionRecommendation": "Prizma masalalarida asos qanday shakl (to'g'ri to'rtburchak, muntazam uchburchak, romb) ekanligini aniqlash yechimning yarmini tashkil etadi."
+  },
+  {
+    "id": "lesson_polyhedra_pyramids",
+    "topicId": "topic_polyhedra_pyramids",
+    "title": "Fazoviy geometriya: Piramidalar va ko'pyoqlar",
+    "definition": "Asosi ixtiyoriy ko'pburchak, qolgan yoqlari esa umumiy bitta uchga ega bo'lgan uchburchaklardan iborat ko'pyoq piramida deyiladi.",
+    "prerequisites": [
+      "Fazoviy geometriya asoslari",
+      "Ko'pburchaklar",
+      "Pifagor"
+    ],
+    "formulas": [
+      {
+        "title": "Piramida hajmi",
+        "formula": "V = (1/3) * S_asos * h",
+        "explanation": "Asos yuzi va piramida balandligi ko'paytmasining uchdan bir qismi."
+      },
+      {
+        "title": "Muntazam piramida yon sirti",
+        "formula": "S_yon = (1/2) * P_asos * l",
+        "explanation": "P_asos - asos perimetri, l - apofema (yon yoq balandligi)."
+      },
+      {
+        "title": "Piramida to'la sirti",
+        "formula": "S_to'la = S_asos + S_yon",
+        "explanation": "Asos yuzi va barcha yon yoqlar yuzalari yig'indisi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_pyr_1",
+        "difficulty": "Oson",
+        "problemText": "Piramida asosining yuzi 30 sm^2, balandligi 8 sm. Uning hajmini toping.",
+        "solutionSteps": [
+          "1. Hajm formulasi: V = (1/3) * S_asos * h.",
+          "2. V = (1/3) * 30 * 8 = 10 * 8 = 80 sm^3."
+        ],
+        "finalAnswer": "80 sm^3"
+      },
+      {
+        "id": "ex_pyr_2",
+        "difficulty": "O'rta",
+        "problemText": "Muntazam to'rtburchakli piramidaning asos tomoni 6 sm, balandligi 4 sm. Uning apofemasini toping.",
+        "solutionSteps": [
+          "1. Muntazam to'rtburchakli piramida asos markazidan tomongacha masofa tomonning yarmiga teng: 6 / 2 = 3 sm.",
+          "2. Balandlik, apofema va bu masofa to'g'ri burchakli uchburchak hosil qiladi.",
+          "3. Pifagor teoremasi: l = sqrt(h^2 + r^2) = sqrt(4^2 + 3^2) = sqrt(16 + 9) = 5 sm."
+        ],
+        "finalAnswer": "5 sm"
+      },
+      {
+        "id": "ex_pyr_3",
+        "difficulty": "Murakkab",
+        "problemText": "Muntazam to'rtburchakli piramida asosining tomoni 10 sm, apofemasi 13 sm. Uning to'la sirt yuzini hisoblang.",
+        "solutionSteps": [
+          "1. Asos yuzi: S_asos = 10^2 = 100 sm^2.",
+          "2. Asos perimetri: P = 4 * 10 = 40 sm.",
+          "3. Yon sirti: S_yon = (1/2) * P * l = (1/2) * 40 * 13 = 260 sm^2.",
+          "4. To'la sirti: S_to'la = S_asos + S_yon = 100 + 260 = 360 sm^2."
+        ],
+        "finalAnswer": "360 sm^2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Apofema bilan piramida balandligini adashtirish",
+        "wrongApproach": "Hajm formulasida balandlik h o'rniga apofema l ni qo'yish.",
+        "correctApproach": "Hajm doimo perpendikulyar balandlik h bilan hisoblanadi (V = 1/3 * S * h), apofema l esa faqat yon sirtni topishda ishlatiladi.",
+        "reason": "Apofema yon sirt ustida yotadi, piramida ichki balandligidan doimo uzunroq."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_pyr_1",
+        "questionText": "Asos yuzi 24 sm^2, balandligi 5 sm bo'lgan piramidaning hajmini hisoblang.",
+        "hint": "V = (1/3) * S * h formulasidan foydalaning.",
+        "answer": "40",
+        "explanation": "V = (1/3) * 24 * 5 = 8 * 5 = 40 sm^3."
+      }
+    ],
+    "revisionRecommendation": "Kesik piramida hajmi V = 1/3 * h * (S_1 + sqrt(S_1 * S_2) + S_2) formulasini takrorlang."
+  },
+  {
+    "id": "lesson_solids_other",
+    "topicId": "topic_solids_other",
+    "title": "Aylanish jismlari: Silindr, konus va shar",
+    "definition": "Tekislik shakllarini (to'g'ri to'rtburchak, to'g'ri burchakli uchburchak, yarim doira) biror o'q atrofida to'liq 360° aylantirishdan hosil bo'lgan fazoviy jismlar aylanish jismlari deyiladi.",
+    "prerequisites": [
+      "Aylana va doira",
+      "Fazoviy tasavvur"
+    ],
+    "formulas": [
+      {
+        "title": "Silindr hajmi va to'la sirti",
+        "formula": "V = πr^2*h; S_to'la = 2πr(r + h)",
+        "explanation": "To'g'ri to'rtburchakni bir tomoni atrofida aylantirishdan hosil bo'ladi."
+      },
+      {
+        "title": "Konus hajmi va yon sirti",
+        "formula": "V = (1/3)πr^2*h; S_yon = πr*l",
+        "explanation": "To'g'ri burchakli uchburchakni kateti atrofida aylantirishdan hosil bo'ladi (l = sqrt(r^2 + h^2))."
+      },
+      {
+        "title": "Shar hajmi va sfera yuzi",
+        "formula": "V = (4/3)πr^3; S = 4πr^2",
+        "explanation": "Yarim doirani diametri atrofida aylantirishdan hosil bo'ladi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_sol_1",
+        "difficulty": "Oson",
+        "problemText": "Silindr asosining radiusi 3 sm, balandligi 7 sm. Uning hajmini toping (π deb oling).",
+        "solutionSteps": [
+          "1. Silindr hajmi: V = π * r^2 * h.",
+          "2. V = π * 3^2 * 7 = π * 9 * 7 = 63π sm^3."
+        ],
+        "finalAnswer": "63π sm^3"
+      },
+      {
+        "id": "ex_sol_2",
+        "difficulty": "O'rta",
+        "problemText": "Konus asosining radiusi 6 sm, balandligi 8 sm. Uning yon sirti yuzini hisoblang.",
+        "solutionSteps": [
+          "1. Yasovchi l ni Pifagor teoremasi bilan topamiz: l = sqrt(r^2 + h^2) = sqrt(6^2 + 8^2) = sqrt(36 + 64) = 10 sm.",
+          "2. Yon sirti: S_yon = π * r * l = π * 6 * 10 = 60π sm^2."
+        ],
+        "finalAnswer": "60π sm^2"
+      },
+      {
+        "id": "ex_sol_3",
+        "difficulty": "Murakkab",
+        "problemText": "Radiusi 3 sm bo'lgan sharning hajmi va sfera sirtining yuzini hisoblang.",
+        "solutionSteps": [
+          "1. Hajm: V = (4/3) * π * r^3 = (4/3) * π * 27 = 4 * 9π = 36π sm^3.",
+          "2. Sirt yuzi: S = 4 * π * r^2 = 4 * π * 9 = 36π sm^2."
+        ],
+        "finalAnswer": "V = 36π sm^3, S = 36π sm^2"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Shar hajmi formulasida darajani unutish",
+        "wrongApproach": "V = (4/3)πr^2 deb hisoblash.",
+        "correctApproach": "Hajm har doim uch o'lchamli bo'lgani sababli radius kubi r^3 ishtirok etadi: V = (4/3)πr^3.",
+        "reason": "O'lchov birligi kubik bo'lishi shart."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_sol_1",
+        "questionText": "Radiusi 2 sm, balandligi 5 sm bo'lgan silindr hajmini toping (π ko'paytuvchisisiz ifodalang).",
+        "hint": "V = π * r^2 * h.",
+        "answer": "20π",
+        "explanation": "V = π * 2^2 * 5 = 20π sm^3."
+      }
+    ],
+    "revisionRecommendation": "Kesik konus va shar qatlamlari hajmlarini hisoblashni mashq qiling."
+  },
+  {
+    "id": "lesson_combinatorics",
+    "topicId": "topic_combinatorics",
+    "title": "Kombinatorika va klassik ehtimollik",
+    "definition": "Kombinatorika elementlar to'plamidan ma'lum qoidalarga ko'ra turli kombinatsiyalar tuzish va ularning sonini hisoblash, ehtimollar nazariyasi esa tasodifiy hodisalarning ro'y berish imkoniyatini o'rganadi.",
+    "prerequisites": [
+      "Faktorial",
+      "Kasrlar ustida amallar"
+    ],
+    "formulas": [
+      {
+        "title": "O'rin almashtirish va Guruhlash",
+        "formula": "P_n = n!; C_n^k = n! / (k! * (n - k)!)",
+        "explanation": "P_n - n ta elementning o'rin almashishlari, C_n^k - tartib muhim bo'lmagan tanlashlar soni."
+      },
+      {
+        "title": "Klassik ehtimollik ta'rifi",
+        "formula": "P(A) = m / n",
+        "explanation": "m - hodisaga qulaylik tug'diruvchi hollar soni, n - barcha teng imkoniyatli natijalar soni (0 <= P(A) <= 1)."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_comb_1",
+        "difficulty": "Oson",
+        "problemText": "5 nafar o'quvchini bitta qatorga necha xil usulda tizish mumkin?",
+        "solutionSteps": [
+          "1. O'rin almashtirishlar soni P_5 = 5!.",
+          "2. 5! = 1 * 2 * 3 * 4 * 5 = 120."
+        ],
+        "finalAnswer": "120"
+      },
+      {
+        "id": "ex_comb_2",
+        "difficulty": "O'rta",
+        "problemText": "7 nafar talabadan 3 nafarini tanlovga yuborish uchun necha xil usulda guruhlash mumkin?",
+        "solutionSteps": [
+          "1. Tanlashda tartib muhim emas, shuning uchun kombinatsiyalar soni C_7^3 ni hisoblaymiz.",
+          "2. C_7^3 = (7 * 6 * 5) / (3 * 2 * 1) = 210 / 6 = 35."
+        ],
+        "finalAnswer": "35"
+      },
+      {
+        "id": "ex_comb_3",
+        "difficulty": "Murakkab",
+        "problemText": "Qutida 4 ta oq va 6 ta qora shar bor. Tavakkaliga olingan 2 ta sharning ikkalasi ham oq bo'lishi ehtimolini toping.",
+        "solutionSteps": [
+          "1. Jami sharlar soni: 4 + 6 = 10 ta. Jami 2 ta shar olish usullari: n = C_10^2 = (10 * 9) / 2 = 45.",
+          "2. Ikkala shar ham oq bo'lish usullari: m = C_4^2 = (4 * 3) / 2 = 6.",
+          "3. Ehtimollik: P(A) = m / n = 6 / 45 = 2 / 15."
+        ],
+        "finalAnswer": "2/15"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Guruhlash (C) va O'rinlashtirish (A) ni adashtirish",
+        "wrongApproach": "Tartib muhim bo'lmagan vaziyatda A_n^k formulasini qo'llash.",
+        "correctApproach": "Agar elementlarning navbati yoki vazifasi (masalan, sardor va o'rinbosar) farq qilsa - A_n^k, shunchaki guruh tuzilsa - C_n^k olinadi.",
+        "reason": "Guruhlashda bir xil elementlarning o'rin almashuvi yangi holat yaratmaydi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_comb_1",
+        "questionText": "C_5^2 ning qiymatini hisoblang.",
+        "hint": "(5 * 4) / (2 * 1) ni bajaring.",
+        "answer": "10",
+        "explanation": "C_5^2 = 20 / 2 = 10."
+      }
+    ],
+    "revisionRecommendation": "Qarama-qarshi hodisa ehtimolligi P(not A) = 1 - P(A) qoidasini takrorlang."
+  },
+  {
+    "id": "lesson_statistics",
+    "topicId": "topic_statistics",
+    "title": "Statistika va ma'lumotlar tahlili",
+    "definition": "Statistika ma'lumotlar to'plamini yig'ish, guruhlash, o'rtacha ko'rsatkichlarini (o'rta arifmetik, moda, mediana, quloch) topish va diagrammalarda ifodalash bilan shug'ullanadi.",
+    "prerequisites": [
+      "Arifmetik amallar",
+      "Foizlar va jadvallar"
+    ],
+    "formulas": [
+      {
+        "title": "O'rta arifmetik qiymat",
+        "formula": "X_o'rta = (x_1 + x_2 + ... + x_n) / n",
+        "explanation": "Barcha qiymatlar yig'indisini ularning soniga bo'lish."
+      },
+      {
+        "title": "Moda va Mediana",
+        "formula": "Moda - eng ko'p takrorlangan son; Mediana - o'sish tartibidagi o'rtadagi son",
+        "explanation": "Juft sondagi qatorda mediana o'rtadagi ikki sonning o'rta arifmetigiga teng."
+      },
+      {
+        "title": "O'zgarish qulochi",
+        "formula": "R = X_max - X_min",
+        "explanation": "Qatordagi eng katta va eng kichik qiymatlar ayirmasi."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_stat_1",
+        "difficulty": "Oson",
+        "problemText": "Sonlar qatori berilgan: 4, 7, 9, 12, 18. Ularning o'rta arifmetigini toping.",
+        "solutionSteps": [
+          "1. Barcha sonlarni qo'shamiz: 4 + 7 + 9 + 12 + 18 = 50.",
+          "2. Sonlar soni: n = 5.",
+          "3. O'rta arifmetik: 50 / 5 = 10."
+        ],
+        "finalAnswer": "10"
+      },
+      {
+        "id": "ex_stat_2",
+        "difficulty": "O'rta",
+        "problemText": "Qator berilgan: 3, 8, 2, 8, 5, 8, 7, 4. Uning modasi va medianasini toping.",
+        "solutionSteps": [
+          "1. Sonlarni o'sish tartibida joylashtiramiz: 2, 3, 4, 5, 7, 8, 8, 8.",
+          "2. Eng ko'p takrorlangan son 8 (3 marta), demak Moda = 8.",
+          "3. Elementlar soni n = 8 (juft). O'rtada 4- va 5-elementlar (5 va 7) turibdi.",
+          "4. Mediana = (5 + 7) / 2 = 12 / 2 = 6."
+        ],
+        "finalAnswer": "Moda = 8, Mediana = 6"
+      },
+      {
+        "id": "ex_stat_3",
+        "difficulty": "Murakkab",
+        "problemText": "Beshta imtihonning to'rttasidan talaba 75, 80, 85 va 90 ball oldi. Umumiy o'rtacha ball 84 bo'lishi uchun u beshinchi imtihondan necha ball olishi kerak?",
+        "solutionSteps": [
+          "1. Beshta imtihonning o'rtachasi 84 bo'lishi uchun umumiy ballar yig'indisi 84 * 5 = 420 bo'lishi kerak.",
+          "2. Dastlabki to'rtta imtihon yig'indisi: 75 + 80 + 85 + 90 = 330.",
+          "3. Beshinchi imtihon bali: 420 - 330 = 90."
+        ],
+        "finalAnswer": "90"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Medianani topishdan oldin qatorni saralamaslik",
+        "wrongApproach": "Aralash berilgan qatordan to'g'ridan-to'g'ri o'rtadagi sonni olish.",
+        "correctApproach": "Mediana faqat qat'iy o'sish (yoki kamayish) tartibida tartiblangan qatordan aniqlanadi.",
+        "reason": "Mediana tartib o'rniga bog'liq ko'rsatkichdir."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_stat_1",
+        "questionText": "5, 12, 15, 20 sonlarining o'zgarish qulochini toping.",
+        "hint": "Eng katta sondan eng kichik sonni ayiring (20 - 5).",
+        "answer": "15",
+        "explanation": "20 - 5 = 15."
+      }
+    ],
+    "revisionRecommendation": "Vaznli o'rta arifmetik qiymat va gistogrammalar tahlilini mashq qiling."
+  },
+  {
+    "id": "lesson_word_problems",
+    "topicId": "topic_word_problems",
+    "title": "Matnli va amaliy masalalar: Harakat, ish va eritmalar",
+    "definition": "Amaliy hayotiy va fizik jarayonlarni matematik tenglama yoki tengsizliklar tiliga o'tkazish orqali yechiladigan integrallashgan masalalar.",
+    "prerequisites": [
+      "Chiziqli tenglamalar",
+      "Tenglamalar sistemalari",
+      "Kasrlar"
+    ],
+    "formulas": [
+      {
+        "title": "Harakat formulasi",
+        "formula": "S = v * t",
+        "explanation": "Masofa = tezlik * vaqt. Oqim bo'yicha: (v_k + v_o), oqimga qarshi: (v_k - v_o)."
+      },
+      {
+        "title": "Birgalikda ishlash unumdorligi",
+        "formula": "1/t_jami = 1/t_1 + 1/t_2",
+        "explanation": "Barcha ish 1 birlik deb qabul qilinganda unumdorliklar qo'shiladi."
+      },
+      {
+        "title": "Eritma va qotishmalar konsentratsiyasi",
+        "formula": "C = (m_modda / m_jami) * 100%",
+        "explanation": "Eritmadagi sof moddaning umumiy eritmaga foiz nisbati."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_wp_1",
+        "difficulty": "Oson",
+        "problemText": "Avtomobil 240 km masofani 80 km/soat tezlik bilan bosib o'tdi. U yo'lda necha soat bo'lgan?",
+        "solutionSteps": [
+          "1. Vaqt formulasi: t = S / v.",
+          "2. t = 240 / 80 = 3 soat."
+        ],
+        "finalAnswer": "3 soat"
+      },
+      {
+        "id": "ex_wp_2",
+        "difficulty": "O'rta",
+        "problemText": "Birinchi quvur hovuzni 6 soatda, ikkinchisi esa 3 soatda to'ldiradi. Ikkala quvur birgalikda ochilsa, hovuz necha soatda to'ladi?",
+        "solutionSteps": [
+          "1. Birinchi quvurning 1 soatdagi unumdorligi: 1/6.",
+          "2. Ikkinchi quvurning 1 soatdagi unumdorligi: 1/3.",
+          "3. Birgalikdagi unumdorlik: 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2.",
+          "4. Hovuz to'lish vaqti: 1 : (1/2) = 2 soat."
+        ],
+        "finalAnswer": "2 soat"
+      },
+      {
+        "id": "ex_wp_3",
+        "difficulty": "Murakkab",
+        "problemText": "300 gramm 20% li tuz eritmasiga 200 gramm toza suv qo'shildi. Yangi eritmaning konsentratsiyasini toping.",
+        "solutionSteps": [
+          "1. Dastlabki eritmadagi sof tuz miqdori: 300 * 0.20 = 60 gramm.",
+          "2. Suv qo'shilgandan keyingi umumiy massa: 300 + 200 = 500 gramm.",
+          "3. Yangi konsentratsiya: (60 / 500) * 100% = 60 / 5 = 12%."
+        ],
+        "finalAnswer": "12%"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "O'rtacha tezlikni tezliklar o'rta arifmetigi deb hisoblash",
+        "wrongApproach": "Borishda 60 km/soat, qaytishda 40 km/soat bo'lsa, o'rtacha tezlikni (60 + 40)/2 = 50 km/soat deb topish.",
+        "correctApproach": "O'rtacha tezlik har doim umumiy bosib o'tilgan masofani umumiy sarflangan vaqtga bo'lish orqali topiladi: v_o'rt = 2S / (S/60 + S/40) = 48 km/soat.",
+        "reason": "Sekinroq tezlikda ko'proq vaqt sarflanadi, shuning uchun vazn ko'proq bo'ladi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_wp_1",
+        "questionText": "Usta ishni 10 kunda, shogirdi esa 15 kunda bajaradi. Ular birgalikda ishlasa, necha kunda tugatadi?",
+        "hint": "1/10 + 1/15 = (3 + 2)/30 = 5/30 = 1/6.",
+        "answer": "6",
+        "explanation": "1 : (1/6) = 6 kunda."
+      }
+    ],
+    "revisionRecommendation": "Murakkab harakat va qayiqning daryo oqimi bo'yicha hamda unga qarshi harakat masalalarini takrorlang."
+  },
+  {
+    "id": "lesson_dxx_logic",
+    "topicId": "topic_dxx_logic",
+    "title": "Harbiy-mantiqiy va analitik fikrlash sinovlari",
+    "definition": "Fazoviy tasavvur, matnli deduktiv mantiq, kodlangan axborotlarni tahlil qilish va qonuniyatlarni topish ko'nikmalari.",
+    "prerequisites": [
+      "Umumiy mantiqiy fikrlash",
+      "Boshlang'ich arifmetika"
+    ],
+    "formulas": [
+      {
+        "title": "Qarama-qarshi xulosa qoidasi",
+        "formula": "Modus Ponens & Modus Tollens",
+        "explanation": "Agar A bo'lsa B bo'ladi; B bo'lmasa A ham bo'lmagan."
+      },
+      {
+        "title": "Fazoviy kub ochilmasi xossasi",
+        "formula": "Qarama-qarshi yoqlar hech qachon bitta qirrada uchrashmaydi",
+        "explanation": "Ochilmadagi oraliq yoq qonuniyati."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_dxx_log_1",
+        "difficulty": "Oson",
+        "problemText": "Ketma-ketlikdagi qonuniyatni toping: 3, 6, 12, 24, ?",
+        "solutionSteps": [
+          "1. Har bir keyingi had oldingisini 2 ga ko'paytirishdan hosil bo'lmoqda.",
+          "2. 24 * 2 = 48."
+        ],
+        "finalAnswer": "48"
+      },
+      {
+        "id": "ex_dxx_log_2",
+        "difficulty": "O'rta",
+        "problemText": "Agar barcha razvedkachilar chaqqon bo'lsa va Jasur razvedkachi bo'lsa, qanday xulosa kelib chiqadi?",
+        "solutionSteps": [
+          "1. Barcha razvedkachilar to'plami chaqqonlar to'plamining qism-to'plamidir.",
+          "2. Jasur razvedkachilar to'plamiga tegishli.",
+          "3. Demak, Jasur albatta chaqqondir."
+        ],
+        "finalAnswer": "Jasur albatta chaqqondir"
+      },
+      {
+        "id": "ex_dxx_log_3",
+        "difficulty": "Murakkab",
+        "problemText": "Soat 15:30 ni ko'rsatayotganda soat va daqiqa millari orasidagi burchak necha gradus bo'ladi?",
+        "solutionSteps": [
+          "1. Daqiqa mili 30 daqiqada 6 raqami ustida (180° da) bo'ladi.",
+          "2. Soat mili 1 soatda 30° suriladi. 30 daqiqada u 3 raqamidan 30 * 0.5° = 15° oldinga siljiydi.",
+          "3. 3 raqami 90° ga to'g'ri keladi, demak soat mili 90° + 15° = 105° da turadi.",
+          "4. Millari orasidagi burchak: 180° - 105° = 75°."
+        ],
+        "finalAnswer": "75°"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Soat millari masalasida soat milining siljishini hisobga olmaslik",
+        "wrongApproach": "15:30 da soat mili aynan 3 da deb o'ylab, (6 - 3)*30° = 90° deb xulosa qilish.",
+        "correctApproach": "Daqiqa mili yurganda soat mili ham proporsional harakatlanadi (har bir daqiqada 0.5°).",
+        "reason": "Soat mili yarim soatda 3 va 4 ning qoq o'rtasiga keladi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_dxx_log_1",
+        "questionText": "2, 5, 10, 17, 26, ? qatoridagi keyingi sonni toping.",
+        "hint": "Farqlarga e'tibor bering: +3, +5, +7, +9, +...",
+        "answer": "37",
+        "explanation": "Keyingi qo'shiluvchi 11 bo'ladi: 26 + 11 = 37."
+      }
+    ],
+    "revisionRecommendation": "Fazoviy figuralarning turli burchaklardan ko'rinishlari va silogizmlar tahlilini mashq qiling."
+  },
+  {
+    "id": "lesson_dxx_history_geo",
+    "topicId": "topic_dxx_history_geo",
+    "title": "O'zbekiston tarixi va davlatchilik asoslari",
+    "definition": "O'zbekiston hududidagi qadimgi sivilizatsiyalar, Temuriylar davri harbiy san'ati, milliy mustaqillik va konstitutsiyaviy tuzum asoslari.",
+    "prerequisites": [
+      "Maktab tarixi kursi",
+      "Geografiya asoslari"
+    ],
+    "formulas": [
+      {
+        "title": "Tarixiy xronologiya qoidasi",
+        "formula": "Milodiy va Miloddan avvalgi yillar hisobi",
+        "explanation": "Voqealarning sabab-oqibat munosabatlarini vaqt o'qi bo'yicha tahlil qilish."
+      }
+    ],
+    "workedExamples": [
+      {
+        "id": "ex_dxx_hist_1",
+        "difficulty": "Oson",
+        "problemText": "Amir Temur qachon tavallud topgan?",
+        "solutionSteps": [
+          "1. Sohibqiron Amir Temur 1336-yil 9-aprelda Kesh (Shahrisabz) yaqinidagi Xo'ja Ilg'or qishlog'ida tavallud topgan."
+        ],
+        "finalAnswer": "1336-yil 9-aprel"
+      },
+      {
+        "id": "ex_dxx_hist_2",
+        "difficulty": "O'rta",
+        "problemText": "O'zbekiston Respublikasining Davlat mustaqilligi qachon e'lon qilingan?",
+        "solutionSteps": [
+          "1. 1991-yil 31-avgustda O'zbekiston mustaqilligi e'lon qilingan va 1-sentyabr Mustaqillik kuni deb belgilangan."
+        ],
+        "finalAnswer": "1991-yil 31-avgust"
+      },
+      {
+        "id": "ex_dxx_hist_3",
+        "difficulty": "Murakkab",
+        "problemText": "Amir Temur davlatida harbiy tuzilma qanday tizimga asoslangan edi?",
+        "solutionSteps": [
+          "1. Qo'shin o'nlik, yuzlik, minglik va tuman (10 000 askar) tizimiga asoslangan.",
+          "2. Jang maydonida 7 qismli jangovar tartib (yasol, qovul, mang'lay, barang'or, juvang'or va boshqalar) qo'llanilgan."
+        ],
+        "finalAnswer": "O'nlik tizim va 7 qismli jangovar tartib"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistakeTitle": "Sanalarni noaniq eslab qolish",
+        "wrongApproach": "Tarixiy sanalarni taxminiy yozish.",
+        "correctApproach": "Asosiy davlat sanalarini aniq manbalar asosida yod olish talab etiladi.",
+        "reason": "Test sinovlarida bitta yil farqi xato javobga olib keladi."
+      }
+    ],
+    "guidedPractice": [
+      {
+        "id": "gp_dxx_hist_1",
+        "questionText": "Mirzo Ulug'bek tomonidan barpo etilgan mashhur rasadxona qaysi shaharda joylashgan?",
+        "hint": "Temuriylar poytaxti Samarqand shahrini eslang.",
+        "answer": "Samarqand",
+        "explanation": "Ulug'bek rasadxonasi 1420-yillarda Samarqandda qurilgan."
+      }
+    ],
+    "revisionRecommendation": "O'zbekiston Respublikasi Konstitutsiyasining asosiy prinsiplari va davlat ramzlarini takrorlang."
+  }
+]
